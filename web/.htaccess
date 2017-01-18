@@ -1,0 +1,16 @@
+RewriteEngine on
+# If a directory or a file exists, use the request directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# Otherwise forward the request to index.php
+RewriteRule . index.php
+
+<IfModule mod_rewrite.c>
+
+Redirect 301 /favicon.ico /favicon.png
+Redirect 301 /apple-touch-icon.png /favicon.png
+Redirect 301 /site/ /
+
+Redirect 301 /news http://www.gmrpg.org/news
+
+</IfModule>

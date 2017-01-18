@@ -1,0 +1,5 @@
+User-agent: *
+Allow: *
+Disallow: /site/*
+Sitemap: http://geeklive.ru/sitemap.xml
+Host: geeklive.ru
