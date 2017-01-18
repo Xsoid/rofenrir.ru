@@ -40,7 +40,7 @@ AppAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
-            ['label' => 'Старая панель управления', 'url' => ['http://cp.rofenrir.ru']],
+            ['label' => 'Главная страница', 'url' => ['/ru/']],
         ],
     ]);
     NavBar::end();
@@ -58,7 +58,7 @@ AppAsset::register($this);
     <div class="container">
         <p class="pull-left"><a href="/about" class="btn btn-link">О проекте</a></p>
 
-        <p class="pull-right">&copy; Project Fenrir <?= date('Y') ?></p>
+        <p class="pull-right">&copy; Project Fenrir <?= date('Y') ?> [18+]</p>
     </div>
 </footer>
 
