@@ -31,7 +31,7 @@ AppAsset::register($this);
 
     <?php
     NavBar::begin([
-        'brandLabel' => 'GeekLive',
+        'brandLabel' => 'Project Fenrir',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-default navbar-fixed-top',
@@ -40,9 +40,7 @@ AppAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
-            ['label' => 'Поиск', 'url' => ['/search']],
-            ['label' => 'О портале', 'url' => ['/about']],
-            ['label' => 'Единая учетная запись', 'url' => ['/id/index']],
+            ['label' => 'Старая панель управления', 'url' => ['http://cp.rofenrir.ru']],
         ],
     ]);
     NavBar::end();
@@ -58,9 +56,9 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left"><a href="/about" class="btn btn-link">О портале</a></p>
+        <p class="pull-left"><a href="/about" class="btn btn-link">О проекте</a></p>
 
-        <p class="pull-right">&copy; GMRPG Group <?= date('Y') ?></p>
+        <p class="pull-right">&copy; Project Fenrir <?= date('Y') ?></p>
     </div>
 </footer>
 
