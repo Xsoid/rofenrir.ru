@@ -40,8 +40,9 @@ AppAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
-            ['label' => 'Главная страница', 'url' => ['/ru/']],
+            ['label' => 'Главная страница', 'url' => ['/ru/index']],
             ['label' => 'О проекте', 'url' => ['/ru/about/index']],
+            ['label' => 'Поддержка проекта', 'url' => ['/ru/donate/index']],
         ],
     ]);
     NavBar::end();
