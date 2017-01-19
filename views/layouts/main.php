@@ -41,6 +41,7 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Главная страница', 'url' => ['/ru/']],
+            ['label' => 'О проекте', 'url' => ['/ru/about/']],
         ],
     ]);
     NavBar::end();
@@ -56,7 +57,7 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left"><a href="/about" class="btn btn-link">О проекте</a></p>
+        <p class="pull-left"><a href="/ru/about/" class="btn btn-link">О проекте</a></p>
 
         <p class="pull-right">&copy; Project Fenrir <?= date('Y') ?> [18+]</p>
     </div>

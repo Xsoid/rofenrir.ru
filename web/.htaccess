@@ -7,8 +7,9 @@ RewriteRule . index.php
 
 <IfModule mod_rewrite.c>
 
-Redirect 301 /favicon.ico /favicon.png
-Redirect 301 /apple-touch-icon.png /favicon.png
 Redirect 301 /site/ /
+
+Redirect 302 /download/rofenrir-full /client
+Redirect 302 /download/rofenrir-patch /client
 
 </IfModule>
