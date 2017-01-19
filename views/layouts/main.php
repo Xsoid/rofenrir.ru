@@ -41,7 +41,7 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Главная страница', 'url' => ['/ru/']],
-            ['label' => 'О проекте', 'url' => ['/ru/about/']],
+            ['label' => 'О проекте', 'url' => ['/ru/about/index']],
         ],
     ]);
     NavBar::end();

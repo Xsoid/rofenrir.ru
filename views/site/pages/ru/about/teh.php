@@ -15,6 +15,7 @@ $this->registerMetaTag([
 
 <?= $this->render('_menu') ?>
 
+<h1>Технические особенности сервера</h1>
 <p><span style="font-family: Arial, sans-serif; ">Сервер работает с 25.12.2011</span></p>
 <p>Основан на: rAthena</p>
 <p>Механика:&nbsp;<span style="color: rgb(255, 0, 0); "><strong>Renewal</strong></span><br />
