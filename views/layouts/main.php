@@ -58,7 +58,11 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left"><a href="/ru/about/" class="btn btn-link">О проекте</a></p>
+        <p class="pull-left">
+            <a href="/" class="btn btn-link">Сайт</a> 
+            <a href="http://www.rofenrir.ru/client" target="_blank" class="btn btn-link">Клиент</a> 
+            <a href="http://forum.rofenrir.ru" target="_blank" class="btn btn-link">Форум</a> 
+        </p>
 
         <p class="pull-right">&copy; Project Fenrir <?= date('Y') ?> [18+]</p>
     </div>

@@ -11,6 +11,7 @@ $this->registerMetaTag([
      'name' => 'description',
      'content' => 'Бесплатный игровой сервер Ragnarok Online. Нет абонентская платы и внутренних покупок. Игра без ограничений. Без вайпов с открытия в 2011 году.'
 ]);
+$this->params['breadcrumbs'][] = $this->title;
 ?>
 
 <?= $this->render('_menu') ?>
