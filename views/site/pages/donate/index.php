@@ -11,7 +11,6 @@ $this->registerMetaTag([
      'name' => 'description',
      'content' => 'RoFenrir -  русский экспериментальный сервер Ragnarok Online. Бесплатный: без абонентской платы и внутренних платежей.'
 ]);
-$this->params['breadcrumbs'][] = $this->title;
 ?>
 
 <div class="site-index">
@@ -23,14 +22,15 @@ $this->params['breadcrumbs'][] = $this->title;
 
         <iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/donate.xml?account=41001537616041&quickpay=donate&payment-type-choice=on&default-sum=210&targets=%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B0+%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0+RoFenrir&target-visibility=on&project-name=RoFenrir&project-site=http%3A%2F%2Fwww.rofenrir.ru&button-text=05&comment=on&hint=%D0%9D%D0%B0%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%3A+%22%D0%92%D0%BA%D0%BB%D0%B0%D0%B4+%D0%B2+%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4+%D0%BA%D0%B2%D0%B5%D1%81%D1%82%D0%BE%D0%B2+%D0%B2+%D0%9F%D1%80%D0%BE%D0%BD%D1%82%D0%B5%D1%80%D0%B5%22&fio=on&mail=on&successURL=http%3A%2F%2Fwww.rofenrir.ru%2Fabout%2Fserver-Support%2Fthanks" width="510" height="201"></iframe>
 
-    </div>
-    <div>
         <p>Спасибо за вашу поддержку.</p>
         <p>При возникновении вопросов связаться с администрацией можно по электронной почте fenrir@rofenrir.ru</p>
-        <hr />
+
+    </div>
+    <div>
+
+        <h1>Люди которым мы безмерно благодарны за поддержку проекта.<br />
+            Благодаря вам колесо не останавливается.</h1>
         <table class="table table-hover">
-            <caption>Люди которым мы безмерно благодарны за поддержку проекта.<br />
-            Благодаря вам колесо не останавливается.</caption>
             <thead>
                 <tr>
                     <th>Друзья проекта</th>

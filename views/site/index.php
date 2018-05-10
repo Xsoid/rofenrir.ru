@@ -14,5 +14,5 @@ $this->registerMetaTag([
 ?>
 
 <script language="javascript">
-    setTimeout("location.href='../ru/'", 1);
+    setTimeout("location.href='../'", 1);
 </script>

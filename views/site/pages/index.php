@@ -33,7 +33,7 @@ $this->registerMetaTag([
             <div class="col-lg-4">
                 <h2>Скачать клиент</h2>
                 <p>Скачай полный игровой клиент Ragnarok Online. Разархивируй куда хочешь и запусти Fenrir.exe</p>
-                <p><a class="btn btn-default" href="https://yadi.sk/d/oXW3HR5CmraSr">Скачать</a></p>
+                <p><a class="btn btn-default" href="http://www.rofenrir.ru/client">Скачать</a></p>
             </div>
             <div class="col-lg-4">
                 <h2>Радоваться</h2>
