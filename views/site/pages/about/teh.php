@@ -42,6 +42,8 @@ $this->params['breadcrumbs'][] = $this->title;
             <li>Taekwon / Taekwon Master / Soul Linker</li>
             <li>Ninja / Kagerou (Oboro)</li>
             <li>Gunslinger / Rebellion</li>
+            <li>Doram (Summoner)</li>
+            <li>Класические и jRo спрайты третих профессий</li>
         </ul>
     </div>
 </div>
