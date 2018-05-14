@@ -34,6 +34,8 @@ $this->params['breadcrumbs'][] = $this->title;
             <li>Облегченный старт для новичков</li>
             <li>Поощрение регистрации гильдии</li>
             <li>Уникальная система скупки лута у игроков через НПЦ</li>
+            <li>У нас на сервере живут Котики</li>
+            <li><a href="https://github.com/Fenrir-Game-Project/rAthena-in-Russian" target="_blank">Открытый проект по переводу сервера на Русский</li>
         </ul>
         <p style="text-align: center; "><strong><span style="color: rgb(255, 0, 0); ">Ставятся эксперименты!</span></strong></p>
     </div>
