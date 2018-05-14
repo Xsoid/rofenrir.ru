@@ -3,7 +3,7 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-use yii\helpers\Html;
+use yii\bootstrap\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
@@ -41,6 +41,7 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'О проекте', 'url' => ['/about/index']],
+            ['label' => 'О проекте', 'url' => ['/about/index']],
             ['label' => 'Поддержка проекта', 'url' => ['/donate/index']],
         ],
     ]);
@@ -60,7 +61,16 @@ AppAsset::register($this);
         <p class="pull-left">
             <a href="/" class="btn btn-link">Главная</a> 
             <a href="/client" target="_blank" class="btn btn-link">Клиент</a> 
-            <a href="http://forum.rofenrir.ru" target="_blank" class="btn btn-link">Форум</a> 
+            <a href="http://forum.rofenrir.ru" target="_blank" class="btn btn-link">Форум</a>
+            <? if (!Yii::$app->user->isGuest): ?>
+                <?= Html::beginForm(['/site/logout'], 'post')
+                    . Html::submitButton(
+                        'Выйти',
+                        ['class' => 'btn btn-link']
+                    )
+                    . Html::endForm();
+                ?>
+            <? endif; ?>
         </p>
 
         <p class="pull-right">&copy; Project Fenrir <?= date('Y') ?> [18+]</p>

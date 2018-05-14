@@ -16,12 +16,9 @@ $this->registerMetaTag([
 
     <div class="jumbotron">
         <h1>RO Fenrir</h1>
-
         <p class="lead">Ragnarok Online Server</p>
-
-        <p>
-            <a class="btn btn-lg btn-success" href="<?= $authUrl ?>">Начать игру</a>
-        </p>
+        <p class="lead">На данный момент сервер доступен только для пользователей зарегестрированных ранее. Скоро регистрация откровется вновь.</p>
+        <? /* <p><a class="btn btn-lg btn-success" href="http://cp.rofenrir.ru/">Начать игру</a></p> */?>
     </div>
 
     <div class="body-content">
@@ -35,7 +32,7 @@ $this->registerMetaTag([
             <div class="col-lg-4">
                 <h2>Скачать клиент</h2>
                 <p>Скачай полный игровой клиент Ragnarok Online. Разархивируй куда хочешь и запусти Fenrir.exe</p>
-                <p><a class="btn btn-default" href="http://www.rofenrir.ru/client">Скачать</a></p>
+                <p><a class="btn btn-default" href="/client">Скачать</a></p>
             </div>
             <div class="col-lg-4">
                 <h2>Радоваться</h2>

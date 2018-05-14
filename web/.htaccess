@@ -7,8 +7,6 @@ RewriteRule . index.php
 
 <IfModule mod_rewrite.c>
 
-Redirect 301 /site/ /
-
 Redirect 302 /download/rofenrir-full /client
 Redirect 302 /download/rofenrir-patch /client
 
