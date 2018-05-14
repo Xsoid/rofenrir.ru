@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\models\GameAccount;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -26,7 +27,7 @@ class SiteController extends Controller
         return [
             'access' => [
                 'class' => AccessControl::className(),
-                'only' => ['logout', 'signup','profile'],
+                'only' => ['logout', 'signup', 'profile', ''],
                 'rules' => [
                     [
                         'actions' => ['signup'],
@@ -34,12 +35,7 @@ class SiteController extends Controller
                         'roles' => ['?'],
                     ],
                     [
-                        'actions' => ['logout'],
-                        'allow' => true,
-                        'roles' => ['@'],
-                    ],
-                    [
-                        'actions' => ['profile'],
+                        'actions' => ['logout', 'profile', 'account'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -74,40 +70,12 @@ class SiteController extends Controller
                 'class' => 'app\ext\MarkdownAction',
                 'viewPrefix' => 'markdown'
             ],
+            'index' => [
+                'class' => 'share\actions\LoginRpgidAction',
+                'redirectUrl' => ['profile'],
+                'viewFile' => 'index',
+            ],
         ];
-    }
-
-    /**
-     * Displays homepage.
-     *
-     * @return mixed
-     */
-    public function actionIndex()
-    {
-        return $this->render('index');
-    }
-
-    /**
-     * Logs in a user.
-     *
-     * @return mixed
-     */
-    public function actionLogin()
-    {
-        if (!Yii::$app->user->isGuest) {
-            return $this->goHome();
-        }
-
-        $user = \app\models\User::find()->one();
-
-        $model = new LoginForm();
-        if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
-        } else {
-            return $this->render('login', [
-                'model' => $model,
-            ]);
-        }
     }
 
     /**
@@ -223,13 +191,38 @@ class SiteController extends Controller
     public function actionProfile()
     {
         $user = Yii::$app->user->identity;
-        $user->scenario = User::SCENARIO_PROFILE;
-        if ($user->load(Yii::$app->request->post()) && $user->save()) {
-
-        }
-
         return $this->render('profile', [
             'model' => $user,
         ]);
+    }
+
+    public function actionAccount($id)
+    {
+        $model = $this->findAccount($id);
+        $user = Yii::$app->user->identity;
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+            if ($model->new_user_pass) {
+                $model->changePassword($model->new_user_pass);
+            }
+        }
+
+        return $this->render('account', [
+            'model' => $model,
+            'user' => $user,
+        ]);
+    }
+
+    /**
+     * @param $id
+     * @return GameAccount
+     */
+    protected function findAccount($id)
+    {
+        $user = Yii::$app->user->identity;
+        if (($model = $user->getGameAccount($id)) !== null) {
+            return $model;
+        } else {
+            throw new NotFoundHttpException('Такой страницы не существует.');
+        }
     }
 }

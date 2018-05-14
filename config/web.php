@@ -12,7 +12,8 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                'login' => 'site/login',
+                'profile' => 'site/profile',
+                'account' => 'site/account',
                 [
                     'class' => 'app\ext\ViewUrlRule',
                 ],
