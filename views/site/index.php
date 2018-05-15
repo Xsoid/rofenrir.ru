@@ -2,7 +2,7 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'RO Fenrir - Ragnarok Online Server';
+$this->title = 'RoFenrir - Ragnarok Online Server';
 $this->registerMetaTag([
     'name' => 'keywords',
     'content' => 'Ragnarok Online, Renewal, Fenrir, RoFenrir, сервер, бесплатная игра'
