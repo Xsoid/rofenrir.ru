@@ -17,11 +17,7 @@ $this->registerMetaTag([
 ?>
 <div class="site-index">
     <div class="body-content">
-        <h1>Профиль</h1>
-
-        <p>
-            <a href="<?= Yii::$app->params['profileUrl'] ?>" class="btn btn-success" target="_blank">Редактировать E-mail</a>
-        </p>
+        <h1>Мой Профиль</h1>
         <table class="table table-bordered table-condensed table-striped">
             <tr>
                 <th>E-mail</th>
@@ -41,6 +37,9 @@ $this->registerMetaTag([
             </tr>
         <? endforeach; ?>
         </table>
+        <p>
+            <a href="<?= Yii::$app->params['profileUrl'] ?>" class="btn btn-success" target="_blank">Редактировать E-mails</a>
+        </p>
 
         <h2>Игровые аккуанты</h2>
         <table class="table table-bordered table-condensed table-striped">

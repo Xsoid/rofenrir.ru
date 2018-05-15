@@ -17,8 +17,7 @@ $this->registerMetaTag([
     <div class="jumbotron">
         <h1>RO Fenrir</h1>
         <p class="lead">Ragnarok Online Server</p>
-        <p class="lead">На данный момент сервер доступен только для пользователей зарегестрированных ранее. Скоро регистрация откровется вновь.</p>
-        <? /* <p><a class="btn btn-lg btn-success" href="http://cp.rofenrir.ru/">Начать игру</a></p> */?>
+        <p><a class="btn btn-lg btn-success" href="<?= $authUrl ?>">ВХОД</a></p>
     </div>
 
     <div class="body-content">

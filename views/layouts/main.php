@@ -40,9 +40,9 @@ AppAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
+            ['label' => 'Клиент', 'url' => ['/client']],
             ['label' => 'О проекте', 'url' => ['/about/index']],
-            ['label' => 'О проекте', 'url' => ['/about/index']],
-            ['label' => 'Поддержка проекта', 'url' => ['/donate/index']],
+            ['label' => 'Донат', 'url' => ['/about/donate']],
         ],
     ]);
     NavBar::end();
@@ -59,10 +59,9 @@ AppAsset::register($this);
 <footer class="footer">
     <div class="container">
         <p class="pull-left">
-            <a href="/" class="btn btn-link">Главная</a> 
-            <a href="/client" target="_blank" class="btn btn-link">Клиент</a> 
-            <a href="http://forum.rofenrir.ru" target="_blank" class="btn btn-link">Форум</a>
+            <a href="http://forum.rofenrir.ru" target="_metrics" class="btn btn-link">Форум</a>
             <? if (!Yii::$app->user->isGuest): ?>
+                <a href="/profile" class="btn btn-link">Профиль</a>
                 <?= Html::beginForm(['/site/logout'], 'post')
                     . Html::submitButton(
                         'Выйти',
