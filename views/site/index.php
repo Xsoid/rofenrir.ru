@@ -14,8 +14,11 @@ $this->registerMetaTag([
 ?>
 <div class="site-index">
 
-    <div class="jumbotron">
-        <h1>RO Fenrir</h1>
+    <div class="jumbotron" style="
+        background-image: url(img/character-summoner.jpg);
+        background-position: center;
+    ">
+        <h1>RoFenrir</h1>
         <p class="lead">Ragnarok Online Server</p>
         <p><a class="btn btn-lg btn-success" href="<?= $authUrl ?>">ВХОД</a></p>
     </div>
