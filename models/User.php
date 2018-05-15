@@ -2,18 +2,21 @@
 namespace app\models;
 
 use share\models\BaseUser;
+use yii\helpers\ArrayHelper;
 
 /**
  * Class User
  * @property GameAccount[] $gameAccounts
+ * @property string[] $checkedEmails
+ * @property string[] $gameAccountEmails
  * @package app\models
  */
 class User extends BaseUser
 {
     /**
-     * @return GameAccount[]|\yii\db\ActiveQuery
+     * @return string[]
      */
-    public function getGameAccounts() {
+    public function getCheckedEmails() {
         $emails = [];
         if ($this->email_checked) {
             $emails[] = $this->email;
@@ -26,12 +29,24 @@ class User extends BaseUser
         if (empty($emails)) {
             return [];
         }
-        $emails = $this->emails;
+        return $emails;
+    }
+
+    /**
+     * @return GameAccount[]|\yii\db\ActiveQuery
+     */
+    public function getGameAccounts() {
+//        $emails = $this->emails;
+        $emails = $this->checkedEmails;
         $query = GameAccount::find()->where([
             'email' => $emails,
         ]);
         $query->multiple = true;
         return $query;
+    }
+
+    public function getGameAccountEmails() {
+        return ArrayHelper::getColumn($this->gameAccounts, 'email');
     }
 
     public function getGameAccount($id) {
@@ -41,5 +56,11 @@ class User extends BaseUser
             }
         }
         return null;
+    }
+
+    public function getNewGameEmails()
+    {
+        $result = array_diff($this->checkedEmails , $this->gameAccountEmails);
+        return array_combine($result, $result);
     }
 }

@@ -27,7 +27,7 @@ class SiteController extends Controller
         return [
             'access' => [
                 'class' => AccessControl::className(),
-                'only' => ['logout', 'signup', 'profile', ''],
+                'only' => ['logout', 'signup', 'profile', 'account', 'create-account'],
                 'rules' => [
                     [
                         'actions' => ['signup'],
@@ -35,7 +35,7 @@ class SiteController extends Controller
                         'roles' => ['?'],
                     ],
                     [
-                        'actions' => ['logout', 'profile', 'account'],
+                        'actions' => ['logout', 'profile', 'account', 'create-account'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -207,6 +207,22 @@ class SiteController extends Controller
         }
 
         return $this->render('account', [
+            'model' => $model,
+            'user' => $user,
+        ]);
+    }
+
+    public function actionCreateAccount()
+    {
+        $model = new GameAccount();
+        $model->sex = 'S';
+        $model->birthdate = date('Y-n-d');
+        $user = Yii::$app->user->identity;
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            return $this->redirect(['profile']);
+        }
+
+        return $this->render('create-account', [
             'model' => $model,
             'user' => $user,
         ]);

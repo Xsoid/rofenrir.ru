@@ -61,5 +61,9 @@ $this->registerMetaTag([
                 </tr>
             <? endforeach; ?>
         </table>
+
+        <p>
+            <a href="<?= Url::to(['/site/create-account']) ?>" class="btn btn-success">Создать аккуант</a>
+        </p>
     </div>
 </div>

@@ -52,16 +52,10 @@ class GameAccount extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['sex'], 'string'],
-            [['group_id', 'state', 'unban_time', 'expiration_time', 'logincount', 'character_slots', 'pincode_change', 'vip_time', 'old_group'], 'integer'],
-            [['lastlogin', 'birthdate'], 'safe'],
-            [['userid'], 'string', 'max' => 23],
             [['new_user_pass'], 'string', 'max' => 32],
-            [['new_user_pass'], 'match', 'pattern' => '/^[a-zA-Z0-9]+$/', 'message'=>'Допустимы символы латинского алфавита и цифры'],
-            [['email'], 'string', 'max' => 39],
-            [['last_ip'], 'string', 'max' => 100],
-            [['pincode'], 'string', 'max' => 4],
-            [['userid'], 'unique'],
+            [['new_user_pass', 'user_pass'], 'match', 'pattern' => '/^[a-zA-Z0-9]+$/', 'message'=>'Допустимы символы латинского алфавита и цифры'],
+            [['userid', 'email'], 'unique'],
+            [['userid', 'email', 'user_pass'], 'required'],
         ];
     }
 
@@ -72,10 +66,10 @@ class GameAccount extends \yii\db\ActiveRecord
     {
         return [
             'account_id' => 'Account ID',
-            'userid' => 'Userid',
-            'user_pass' => 'User Pass',
+            'userid' => 'Логин',
+            'user_pass' => 'Пароль',
             'sex' => 'Sex',
-            'email' => 'Email',
+            'email' => 'E-mail',
             'group_id' => 'Group ID',
             'state' => 'State',
             'unban_time' => 'Unban Time',
