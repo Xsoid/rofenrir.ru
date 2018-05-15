@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\GameAccount */
 
-$this->title = 'RO Fenrir - Ragnarok Online Server / Профиль';
+$this->title = 'RO Fenrir - Ragnarok Online Server | Профиль';
 $this->registerMetaTag([
     'name' => 'keywords',
     'content' => 'Ragnarok Online, Renewal, Fenrir, RoFenrir, сервер, бесплатная игра'
