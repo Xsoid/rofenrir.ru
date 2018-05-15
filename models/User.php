@@ -60,7 +60,7 @@ class User extends BaseUser
 
     public function getNewGameEmails()
     {
-        $result = array_diff($this->checkedEmails , $this->gameAccountEmails);
+        $result = $this->checkedEmails;
         return array_combine($result, $result);
     }
 }
