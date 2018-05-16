@@ -83,10 +83,10 @@ $this->params['breadcrumbs'][] = 'Жители мир Fenrir';
                 'rowOptions' => function($model) {
                     $classNames = [];
                     if ($model->online) {
-                        $classNames[] = 'char-online';
+                        $classNames[] = 'success';
                     }
                     if ($model->vendingCount) {
-                        $classNames[] = 'char-vending';
+                        $classNames[] = 'warning';
                     }
                     return [
                         'class' => implode(' ', $classNames),
