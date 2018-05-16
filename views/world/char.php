@@ -42,13 +42,12 @@ $this->params['breadcrumbs'][] = 'Жители мир Fenrir';
                         'class' => 'checkbox-inline'
                     ],
                 ])->checkbox() ?>
-                <?= $form->field($searchModel, 'is_trade', [
-                    'options' => [
-                        'class' => 'checkbox-inline'
-                    ],
-                ])->checkbox() ?>
 
-                <?= $form->field($searchModel, 'class')->dropDownList(\app\models\Char::getClassList(), [
+                <?= $form->field($searchModel, 'class', [
+                    'labelOptions' => [
+                        'class' => 'invisible',
+                    ],
+                ])->dropDownList(\app\models\Char::getClassList(), [
                     'prompt' => 'Все профессии',
                 ]) ?>
             </div>
@@ -69,7 +68,7 @@ $this->params['breadcrumbs'][] = 'Жители мир Fenrir';
 //                    'account_id',
 //            'name',
                     'title',
-                    'class',
+                    'className',
                     'base_level',
                     'job_level',
 //            'guild_id',
@@ -101,20 +100,3 @@ $this->params['breadcrumbs'][] = 'Жители мир Fenrir';
         </div>
     </div>
 </div>
-
-<style>
-.table-striped > tbody > tr.char-online {
-    background-color: #21a500;
-    color: #fff;
-}
-.table-striped > tbody > tr.char-online:nth-of-type(odd) {
-    background-color: #3aa52e;
-}
-.table-striped > tbody > tr.char-vending {
-    background-color: #d8752f;
-    color: #fff;
-}
-.table-striped > tbody > tr.char-vending:nth-of-type(odd) {
-    background-color: #ff8b39;
-}
-</style>

@@ -15,7 +15,7 @@ class CharSearch extends Char
 {
     public $is_online = 1;
     public $is_offline;
-    public $is_trade = 1;
+    public $is_trade;
 
     /**
      * {@inheritdoc}
@@ -57,7 +57,7 @@ class CharSearch extends Char
      */
     public function search($params)
     {
-        $query = Char::find()->cache(60);
+        $query = Char::find()->cache(300);
         $query
             ->select([
                 'char.*',

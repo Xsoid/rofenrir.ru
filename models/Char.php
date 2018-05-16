@@ -116,6 +116,7 @@ class Char extends \yii\db\ActiveRecord
             'name' => 'Ник',
             'title' => 'Ник',
             'class' => 'Профессия',
+            'className' => 'Профессия',
             'base_level' => 'Базовый уровень',
             'job_level' => 'Джоб уровень',
             'base_exp' => 'Базовый опыт',
