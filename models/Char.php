@@ -72,6 +72,7 @@ use Yii;
  */
 class Char extends \yii\db\ActiveRecord
 {
+    public $vendingCount;
     /**
      * {@inheritdoc}
      */
@@ -112,11 +113,12 @@ class Char extends \yii\db\ActiveRecord
             'char_id' => 'Char ID',
             'account_id' => 'Account ID',
             'char_num' => 'Char Num',
-            'name' => 'Name',
-            'class' => 'Class',
-            'base_level' => 'Base Level',
-            'job_level' => 'Job Level',
-            'base_exp' => 'Base Exp',
+            'name' => 'Ник',
+            'title' => 'Ник',
+            'class' => 'Профессия',
+            'base_level' => 'Базовый уровень',
+            'job_level' => 'Джоб уровень',
+            'base_exp' => 'Базовый опыт',
             'job_exp' => 'Job Exp',
             'zeny' => 'Zeny',
             'str' => 'Str',
@@ -148,14 +150,14 @@ class Char extends \yii\db\ActiveRecord
             'head_mid' => 'Head Mid',
             'head_bottom' => 'Head Bottom',
             'robe' => 'Robe',
-            'last_map' => 'Last Map',
+            'last_map' => 'Локация',
             'last_x' => 'Last X',
             'last_y' => 'Last Y',
             'save_map' => 'Save Map',
             'save_x' => 'Save X',
             'save_y' => 'Save Y',
             'partner_id' => 'Partner ID',
-            'online' => 'Online',
+            'online' => 'Онлайн',
             'father' => 'Father',
             'mother' => 'Mother',
             'child' => 'Child',
@@ -174,12 +176,17 @@ class Char extends \yii\db\ActiveRecord
         ];
     }
 
+    public function convertEncoding($string)
+    {
+        $result = $string;
+        $result = mb_convert_encoding($result, 'cp1252', 'utf-8');
+        $result = mb_convert_encoding($result, 'utf-8', 'cp1251');
+        return $result;
+    }
+
     public function getTitle()
     {
-        $name = $this->name;
-        $name = mb_convert_encoding($name, 'cp1252', 'utf-8');
-        $name = mb_convert_encoding($name, 'utf-8', 'cp1251');
-        return $name;
+        return $this->convertEncoding($this->name);
     }
 
     public static function getClassList()
@@ -338,5 +345,10 @@ class Char extends \yii\db\ActiveRecord
     {
         $classes = self::getClassList();
         return isset($classes[$this->class]) ? $classes[$this->class] : $this->class;
+    }
+
+    public function getVending()
+    {
+        return $this->hasOne(Vendings::className(), ['char_id' => 'char_id']);
     }
 }
