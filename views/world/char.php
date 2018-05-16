@@ -60,22 +60,6 @@ $this->params['breadcrumbs'][] = 'Жители мир Fenrir';
 
             <?php ActiveForm::end(); ?>
 
-            <div class="checkbox">
-                <label style="padding-right: 15px;">
-                    <input type="checkbox"> Онлайн
-                </label>
-                <label style="padding-right: 15px;">
-                    <input type="checkbox"> Офлайн
-                </label>
-                <label style="padding-right: 15px;">
-                    <input type="checkbox"> Торговля
-                </label>
-            </div>
-            <select class="form-control">
-                <option>Все</option>
-                <option>Novice</option>
-                <option>Sword</option>
-            </select>
             <h2>Жители мира Fenrir</h2>
             <?= GridView::widget([
                 'dataProvider' => $dataProvider,
@@ -101,7 +85,7 @@ $this->params['breadcrumbs'][] = 'Жители мир Fenrir';
                     if ($model->online) {
                         $classNames[] = 'char-online';
                     }
-                    if ($model->vending) {
+                    if ($model->vendingCount) {
                         $classNames[] = 'char-vending';
                     }
                     return [

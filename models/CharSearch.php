@@ -56,13 +56,13 @@ class CharSearch extends Char
      */
     public function search($params)
     {
-        $query = Char::find();
+        $query = Char::find()->cache(180);
         $query
             ->select([
                 'char.*',
                 'COUNT(vendings.char_id) as vendingCount',
             ])
-            ->joinWith('vending')
+            ->leftJoin('vendings', '`char`.`char_id` = `vendings`.`char_id`')
             ->groupBy('{{char}}.char_id');
 
         $query->orderBy([
