@@ -15,11 +15,6 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 
 <div class="row">
-    <div class="col-lg-3">
-        <div class="bs-component">
-            <?= $this->render('_menu') ?>
-        </div>
-    </div>
     <div class="col-lg-9">
         <h1>Технические особенности сервера</h1>
         <p><span style="font-family: Arial, sans-serif; ">Сервер работает с 25.12.2011</span></p>
@@ -45,5 +40,10 @@ $this->params['breadcrumbs'][] = $this->title;
             <li>Doram (Summoner)</li>
             <li>Класические и jRo спрайты третих профессий</li>
         </ul>
+    </div>
+    <div class="col-lg-3">
+        <div class="bs-component">
+            <?= $this->render('_menu') ?>
+        </div>
     </div>
 </div>

@@ -41,6 +41,7 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Клиент', 'url' => ['/client']],
+            ['label' => 'Мир', 'url' => ['/world/']],
             ['label' => 'О проекте', 'url' => ['/about/index']],
             ['label' => 'Донат', 'url' => ['/about/donate']],
         ],

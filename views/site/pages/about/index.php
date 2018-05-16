@@ -16,11 +16,6 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
 <div class="row">
-    <div class="col-lg-3">
-        <div class="bs-component">
-            <?= $this->render('_menu') ?>
-        </div>
-    </div>
     <div class="col-lg-9">
         <h1>Особенности сервера</h1>
         <ul>
@@ -38,5 +33,10 @@ $this->params['breadcrumbs'][] = $this->title;
             <li><a href="https://github.com/Fenrir-Game-Project/rAthena-in-Russian" target="_blank">Открытый проект по переводу сервера на Русский</li>
         </ul>
         <p style="text-align: center; "><strong><span style="color: rgb(255, 0, 0); ">Ставятся эксперименты!</span></strong></p>
+    </div>
+    <div class="col-lg-3">
+        <div class="bs-component">
+            <?= $this->render('_menu') ?>
+        </div>
     </div>
 </div>

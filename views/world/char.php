@@ -49,7 +49,7 @@ $this->params['breadcrumbs'][] = 'Жители мир Fenrir';
                 ])->checkbox() ?>
 
                 <?= $form->field($searchModel, 'class')->dropDownList(\app\models\Char::getClassList(), [
-                    'prompt' => 'Все',
+                    'prompt' => 'Все профессии',
                 ]) ?>
             </div>
 
