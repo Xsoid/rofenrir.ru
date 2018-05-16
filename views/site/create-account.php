@@ -39,6 +39,7 @@ $this->registerMetaTag([
             ]); ?>
             <?= $form->field($model, 'email')->dropDownList($user->newGameEmails) ?>
             <?= $form->field($model, 'userid')->textInput() ?>
+            <?= $form->field($model, 'sex')->radioList(\app\models\GameAccount::getSexList()) ?>
             <?= $form->field($model, 'user_pass')->textInput() ?>
 
             <div class="form-group">

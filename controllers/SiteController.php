@@ -215,7 +215,7 @@ class SiteController extends Controller
     public function actionCreateAccount()
     {
         $model = new GameAccount();
-        $model->sex = 'S';
+        $model->sex = 'M';
         $model->birthdate = date('Y-n-d');
         $user = Yii::$app->user->identity;
         if ($model->load(Yii::$app->request->post()) && $model->save()) {

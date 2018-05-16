@@ -55,6 +55,7 @@ class GameAccount extends \yii\db\ActiveRecord
             [['new_user_pass'], 'string', 'max' => 32],
             [['new_user_pass', 'user_pass'], 'match', 'pattern' => '/^[a-zA-Z0-9]+$/', 'message'=>'Допустимы символы латинского алфавита и цифры'],
             [['userid'], 'unique'],
+            [['sex'], 'string', 'max' => 1],
             [['userid', 'email', 'user_pass'], 'required'],
         ];
     }
@@ -68,7 +69,7 @@ class GameAccount extends \yii\db\ActiveRecord
             'account_id' => 'Account ID',
             'userid' => 'Логин',
             'user_pass' => 'Пароль',
-            'sex' => 'Sex',
+            'sex' => 'Пол',
             'email' => 'E-mail',
             'group_id' => 'Group ID',
             'state' => 'State',
@@ -98,5 +99,13 @@ class GameAccount extends \yii\db\ActiveRecord
     {
         $this->user_pass = $password;
         return $this->save();
+    }
+
+    public static function getSexList()
+    {
+        return [
+            'M' => 'Мужской',
+            'F' => 'Женский',
+        ];
     }
 }
