@@ -67,7 +67,7 @@ class CharSearch extends Char
 
         $query->orderBy([
             'online' => SORT_DESC,
-            'vendingCount' => SORT_DESC,
+            'vendingCount' => SORT_ASC,
             'base_level' => SORT_DESC,
             'job_level' => SORT_DESC,
             'base_exp' => SORT_DESC,

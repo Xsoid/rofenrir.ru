@@ -76,7 +76,7 @@ $this->params['breadcrumbs'][] = 'Жители мир Fenrir';
                     'last_map',
 //            'last_x',
 //            'last_y',
-                    'online',
+//                    'online',
 //            'sex',
 //            'clan_id',
                 ],
