@@ -2,7 +2,7 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'RO Fenrir - Ragnarok Online Server';
+$this->title = 'RoFenrir - Ragnarok Online Server';
 $this->registerMetaTag([
     'name' => 'keywords',
     'content' => 'Ragnarok Online, Renewal, Fenrir, RoFenrir, сервер, бесплатная игра'
@@ -14,11 +14,13 @@ $this->registerMetaTag([
 ?>
 <div class="site-index">
 
-    <div class="jumbotron">
-        <h1>RO Fenrir</h1>
+    <div class="jumbotron" style="
+        background-image: url(img/character-summoner.jpg);
+        background-position: center;
+    ">
+        <h1>RoFenrir</h1>
         <p class="lead">Ragnarok Online Server</p>
-        <p class="lead">На данный момент сервер доступен только для пользователей зарегестрированных ранее. Скоро регистрация откровется вновь.</p>
-        <? /* <p><a class="btn btn-lg btn-success" href="http://cp.rofenrir.ru/">Начать игру</a></p> */?>
+        <p><a class="btn btn-lg btn-success" href="<?= $authUrl ?>">ВХОД</a></p>
     </div>
 
     <div class="body-content">
