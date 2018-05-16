@@ -56,7 +56,7 @@ class CharSearch extends Char
      */
     public function search($params)
     {
-        $query = Char::find()->cache(180);
+        $query = Char::find();
         $query
             ->select([
                 'char.*',
