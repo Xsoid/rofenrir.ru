@@ -15,7 +15,7 @@ $this->registerMetaTag([
     'name' => 'description',
     'content' => 'Бесплатный игровой сервер Ragnarok Online. Нет абонентская платы и внутренних покупок. Игра без ограничений. Без вайпов с открытия в 2011 году.'
 ]);
-$this->params['breadcrumbs'][] = 'Мир Fenrir';
+$this->params['breadcrumbs'][] = ['label' => 'Мир Fenrir', 'url' => ['index']];
 $this->params['breadcrumbs'][] = 'Жители мир Fenrir';
 ?>
 
@@ -45,7 +45,7 @@ $this->params['breadcrumbs'][] = 'Жители мир Fenrir';
 
                 <?= $form->field($searchModel, 'class', [
                     'labelOptions' => [
-                        'class' => 'invisible',
+                        'class' => 'hidden',
                     ],
                 ])->dropDownList(\app\models\Char::getClassList(), [
                     'prompt' => 'Все профессии',
