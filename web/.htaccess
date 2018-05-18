@@ -3,8 +3,9 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 # Otherwise forward the request to index.php
-RewriteCond %{HTTP_HOST} ^www.rofenrir\.ru$ [NC]
+RewriteCond %{HTTP_HOST} ^www.rofenrir.ru$ [NC]
 RewriteRule ^(.*)$ http://rofenrir.ru/$1 [R=301,L]
+
 RewriteRule . index.php
 
 <IfModule mod_rewrite.c>
