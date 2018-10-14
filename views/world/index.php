@@ -9,7 +9,7 @@ $this->registerMetaTag([
 ]);
 $this->registerMetaTag([
     'name' => 'description',
-    'content' => 'Бесплатный игровой сервер Ragnarok Online. Нет абонентская платы и внутренних покупок. Игра без ограничений. Без вайпов с открытия в 2011 году.'
+    'content' => 'RoFenrir - бесплатный игровой сервер Ragnarok Online. Нет абонентская платы и внутренних покупок. Игра без ограничений. Без вайпов с открытия в 2011 году.'
 ]);
 $this->params['breadcrumbs'][] = 'Мир Fenrir';
 ?>
@@ -17,7 +17,7 @@ $this->params['breadcrumbs'][] = 'Мир Fenrir';
 
 <div class="row">
     <div class="col-lg-9">
-        <p>Описание мира Fenrir</p>
+        <p>База актуальных данных для сервера.</p>
     </div>
     <div class="col-lg-3">
         <div class="bs-component">

@@ -3,7 +3,65 @@
 
     <url>
         <loc>http://rofenrir.ru/</loc>
-        <lastmod>2017-01-18</lastmod>
+        <lastmod>2018-10-10</lastmod>
+        <priority>1</priority>
+        <changefreq>always</changefreq>
+    </url>
+    <url>
+        <loc>http://rofenrir.ru/client</loc>
+        <lastmod>2018-10-10</lastmod>
+        <priority>1</priority>
+        <changefreq>always</changefreq>
+    </url>
+
+    <url>
+        <loc>http://rofenrir.ru/info/</loc>
+        <lastmod>2018-10-10</lastmod>
+        <priority>1</priority>
+        <changefreq>always</changefreq>
+    </url>
+    <url>
+        <loc>http://rofenrir.ru/info/job/</loc>
+        <lastmod>2018-10-14</lastmod>
+        <priority>1</priority>
+        <changefreq>always</changefreq>
+    </url>
+    <url>
+        <loc>http://rofenrir.ru/info/rise/</loc>
+        <lastmod>2018-10-13</lastmod>
+        <priority>1</priority>
+        <changefreq>always</changefreq>
+    </url>
+
+    <url>
+        <loc>http://rofenrir.ru/world/</loc>
+        <lastmod>2018-10-10</lastmod>
+        <priority>1</priority>
+        <changefreq>always</changefreq>
+    </url>
+
+    <url>
+        <loc>http://rofenrir.ru/about/</loc>
+        <lastmod>2018-10-10</lastmod>
+        <priority>1</priority>
+        <changefreq>always</changefreq>
+    </url>
+    <url>
+        <loc>http://rofenrir.ru/about/teh</loc>
+        <lastmod>2018-10-10</lastmod>
+        <priority>1</priority>
+        <changefreq>always</changefreq>
+    </url>
+    <url>
+        <loc>http://rofenrir.ru/about/donate</loc>
+        <lastmod>2018-10-10</lastmod>
+        <priority>1</priority>
+        <changefreq>always</changefreq>
+    </url>
+
+    <url>
+        <loc>http://rofenrir.ru/en/</loc>
+        <lastmod>2018-10-10</lastmod>
         <priority>1</priority>
         <changefreq>always</changefreq>
     </url>

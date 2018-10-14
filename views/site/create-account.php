@@ -16,6 +16,7 @@ $this->registerMetaTag([
     'name' => 'description',
     'content' => 'RoFenrir -  русский экспериментальный сервер Ragnarok Online. Бесплатный: без абонентской платы и внутренних платежей.'
 ]);
+$this->params['breadcrumbs'][] = ['label' => 'Профиль', 'url' => ['/profile']];
 $this->params['breadcrumbs'][] = 'Создание аккаунты';
 ?>
 <div class="site-index">
