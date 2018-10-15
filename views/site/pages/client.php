@@ -18,7 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="body-content">
         <h1>Скачать клиент</h1>
         <p><small>Игра работает только на ПК под управлением Windows</small></p>
-        <h3>Полный клиент RoFenrir 17.06.2</h3>
-        <p><a class="btn btn-success" href="https://yadi.sk/d/aEU9rd3s3VwbCE" target="_metrics">Скачать с Яндекс Диск</a> <a class="btn btn-success" href="https://1drv.ms/u/s!AqQBBXyzYdVhhYoEMRF-l7S5ADDzeA" target="_metrics">Скачать с One Drive</a></p>
+        <h3>Полный клиент RoFenrir 18.06</h3>
+        <p><a class="btn btn-success" href="https://yadi.sk/d/3ViWyv2sdGR2fw" target="_metrics">Скачать с Яндекс Диск</a>/p>
     </div>
 </div>
