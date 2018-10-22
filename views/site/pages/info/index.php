@@ -40,6 +40,20 @@ $this->params['breadcrumbs'][] = 'Путиводитель';
           <thead>
             <tr>
               <th scope="col"></th>
+              <th scope="col">Управление и интерфейсы</th>
+              <td scope="col"></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"></th>
+              <td><a href="komand">Консольные команды</a></td>
+              <td></td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th scope="col"></th>
               <th scope="col"><a href="job/">Профессии</a></th>
               <td scope="col"></td>
             </tr>

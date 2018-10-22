@@ -21,17 +21,16 @@ $this->params['breadcrumbs'][] = $this->title;
         <ul>
             <li>Никакой платы и внутренних покупок</li>
             <li>Никаких вайпов и откатов</li>
-            <li>Хардкорный подход к игровой механике</li>
-            <li>Renewal</li>
-            <li>Последние непроверенные обновления Ragnarok Online</li>
-            <li>Только сбалансированные кастомные дополнения</li>
-            <li>Система учётной записей</li>
-            <li>Облегченный старт для новичков</li>
+            <li>Последние непроверенные обновления kRO</li>
+            <li>Минимальные кастомные дополнения</li>
+            <li>Система объединения аккаунтов</li>
             <li>Поощрение регистрации гильдии</li>
-            <li>Уникальная система скупки лута у игроков через НПЦ</li>
-            <li>У нас на сервере живут Котики</li>
-            <li><a href="https://github.com/Fenrir-Game-Project/rAthena-in-Russian" target="_blank">Открытый проект по переводу сервера на Русский</li>
         </ul>
+        <h1>Помощь проекту</h1>
+        <p>Ядро сервером является <a href="https://github.com/rathena/rathena" target="_metrics">rAthena</a>, принимайте активное участие в жизни сообщество, предлагайте обновления и улучшения и они в скоре попадут на сервер.</p>
+        <p><a href="https://github.com/Fenrir-Game-Project/rAthena-in-Russian" target="_metrics">Перевод rAthena на Русский язык</a>. Переводите скрипты и добавляйте их в репозиторий.</p>
+        <p><a href="https://github.com/Xsoid/ROrussianRE" target="_metrics">Перевод клиента Ragnarok Online на Русский язык</a>. Переводите файлы и добавляйте их в репозиторий.</p>
+        <p><a href="/about/donate">Донат</a> - все средства идут оплату сервера и заказ работ для сервера.</p>
     </div>
     <div class="col-lg-3">
         <div class="bs-component">

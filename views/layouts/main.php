@@ -38,10 +38,9 @@ AppAsset::register($this);
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
       <li class="nav-item"><a class="nav-link" href="/client">Клиент</a></li>
-      <li class="nav-item"><a class="nav-link" href="/info/index">Информация</a></li>
+      <li class="nav-item"><a class="nav-link" href="/info/">Информация</a></li>
       <li class="nav-item"><a class="nav-link" href="/world">База</a></li>
-      <li class="nav-item"><a class="nav-link" href="/about/index">О проекте</a></li>
-      <li class="nav-item"><a class="nav-link" href="/about/donate">Донат</a></li>
+      <li class="nav-item"><a class="nav-link" href="/about/">О проекте</a></li>
     </ul>
   </div>
 </div>

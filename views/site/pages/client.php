@@ -2,7 +2,7 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'Клиент Fenrir Ragnarok Online';
+$this->title = 'Клиент Ragnarok Online для RoFenrir';
 $this->registerMetaTag([
      'name' => 'keywords',
      'content' => 'Ragnarok Online, Renewal, Fenrir, RoFenrir, сервер, бесплатная игра, клиент игры, полный клиент'
@@ -16,10 +16,19 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <div class="site-index">
     <div class="body-content">
-        <h1>Скачать клиент</h1>
-        <p><small>Игра работает только на ПК под управлением Windows</small></p>
-        <h3>Полный клиент RoFenrir 18.06.2</h3>
-        <p><a class="btn btn-success" href="https://yadi.sk/d/QkeAwiJqPFRFiQ" target="_metrics">Скачать с Яндекс Диск</a></p>
-        Директория на Яндекс.Диске где будут выкладываться все клиенты и патчи: <a href="https://yadi.sk/d/tH_1TVsaR2j3wQ" target="_metrics">https://yadi.sk/RoFenrir</a>
+        <h1>Файловые харнилища</h1>
+        <p>Актуальный клиент <b>Ragnarok Online</b> для <b>RoFenrir 18.06+</b><br>
+        Хранилище содержит полный клиент RoFenrir и патчер для обновления полного клиента Ragnarok Online или более ранней версии RoFenrir.</p>
+        <h4 style="padding-left: 3rem;">
+            <a href="https://yadi.sk/d/tH_1TVsaR2j3wQ" target="_metrics">Хранилище на Яндекс.Диске</a><br>
+            <a href="https://mega.nz/#F!wZBDQITT!psbXseswyDxf2AjyWxpHcA" target="_metrics">Хранилище на MEGA</a></h4>
+        <h3>Системные требования</h3>
+        <p>ОС Windows 10<br> 
+        Intel Pentium 500 MHz. CPU,<br> 
+        128MB RAM,<br> 
+        8MB видеопамяти,<br>
+        DirectX 8.0,<br> 
+        3GB+ HDD,<br> 
+        доступ в Интернет</p>
     </div>
 </div>

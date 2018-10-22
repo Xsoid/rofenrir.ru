@@ -2,7 +2,7 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'RO Fenrir - Ragnarok Online Server';
+$this->title = 'RoFenrir - Ragnarok Online Server';
 $this->registerMetaTag([
      'name' => 'keywords',
      'content' => 'Ragnarok Online, Renewal, Fenrir, RoFenrir, сервер, бесплатная игра'
@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <div class="row">
     <div class="col-lg-9">
-        <h1>Технические особенности сервера</h1>
+        <h1>Конфигурация сервера</h1>
         <p><span style="font-family: Arial, sans-serif; ">Сервер работает с 25.12.2011</span></p>
         <p>Основан на: rAthena</p>
         <p>Механика:&nbsp;<span style="color: rgb(255, 0, 0); "><strong>Renewal</strong></span><br />
@@ -38,7 +38,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <li>Ninja / Kagerou (Oboro)</li>
             <li>Gunslinger / Rebellion</li>
             <li>Doram (Summoner)</li>
-            <li>Класические и jRo спрайты третих профессий</li>
+            <li>Класcические и jRo спрайты третих профессий</li>
         </ul>
     </div>
     <div class="col-lg-3">
