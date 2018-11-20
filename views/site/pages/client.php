@@ -20,13 +20,13 @@ $this->params['breadcrumbs'][] = $this->title;
         <p>Актуальный клиент <b>Ragnarok Online</b> для <b>RoFenrir 18.06+</b><br>
         Хранилище содержит полный клиент RoFenrir и патчер для обновления полного клиента Ragnarok Online или более ранней версии RoFenrir.</p>
         <h4 style="padding-left: 3rem;">
-            <a href="https://yadi.sk/d/tH_1TVsaR2j3wQ" target="_metrics">Хранилище на Яндекс.Диске</a><br>
+            <a href="https://yadi.sk/d/2A1BDDUVciP4EA" target="_metrics">Хранилище на Яндекс.Диске</a><br>
             <a href="https://mega.nz/#F!wZBDQITT!psbXseswyDxf2AjyWxpHcA" target="_metrics">Хранилище на MEGA</a></h4>
         <h3>Системные требования</h3>
-        <p>ОС Windows 10<br> 
+        <p>ОС Windows<br> 
         Intel Pentium 500 MHz. CPU,<br> 
-        128MB RAM,<br> 
-        8MB видеопамяти,<br>
+        256MB RAM,<br> 
+        16MB видеопамяти,<br>
         DirectX 8.0,<br> 
         3GB+ HDD,<br> 
         доступ в Интернет</p>
