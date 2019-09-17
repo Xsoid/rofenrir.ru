@@ -74,6 +74,7 @@ class SiteController extends Controller
                 'class' => 'share\actions\LoginRpgidAction',
                 'redirectUrl' => ['profile'],
                 'viewFile' => 'index',
+                'useBackRedirectUrl' => false,
             ],
         ];
     }
