@@ -15,7 +15,8 @@ $config = [
                 'profile' => 'site/profile',
                 'account' => 'site/account',
                 [
-                    'class' => 'app\ext\ViewUrlRule',
+                    'class' => 'share\web\ViewUrlRule',
+                    'defaultRoute' => 'site',
                 ],
             ],
         ],
