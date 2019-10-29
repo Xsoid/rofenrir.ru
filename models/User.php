@@ -32,17 +32,20 @@ class User extends BaseRemoteUser
         return $emails;
     }
 
+    private $_accounts;
     /**
      * @return GameAccount[]|\yii\db\ActiveQuery
      */
     public function getGameAccounts() {
-//        $emails = $this->emails;
-        $emails = $this->checkedEmails;
-        $query = GameAccount::find()->where([
-            'email' => $emails,
-        ]);
-        $query->multiple = true;
-        return $query;
+        if ($this->_accounts === null) {
+            $emails = $this->checkedEmails;
+            $query = GameAccount::find()->where([
+                'email' => $emails,
+            ]);
+            $query->multiple = true;
+            $this->_accounts = $query->all();
+        }
+        return $this->_accounts;
     }
 
     public function getGameAccountEmails() {
