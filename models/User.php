@@ -1,7 +1,7 @@
 <?php
 namespace app\models;
 
-use share\models\BaseUser;
+use share\models\BaseRemoteUser;
 use yii\helpers\ArrayHelper;
 
 /**
@@ -11,7 +11,7 @@ use yii\helpers\ArrayHelper;
  * @property string[] $gameAccountEmails
  * @package app\models
  */
-class User extends BaseUser
+class User extends BaseRemoteUser
 {
     /**
      * @return string[]
