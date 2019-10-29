@@ -17,9 +17,6 @@ return [
         // 'add_admin' => 'app\commands\UserController',
     ],
     'components' => [
-        'user' => [
-            'class' => 'app\models\User',
-        ],
         'log' => [
             'targets' => [
                 [
