@@ -40,7 +40,7 @@ AppAsset::register($this);
     <ul class="navbar-nav">
       <li class="nav-item"><a class="nav-link" href="/client">Клиент</a></li>
       <li class="nav-item"><a class="nav-link" href="/info/">Информация</a></li>
-      <li class="nav-item"><a class="nav-link" href="/world">База</a></li>
+      <li class="nav-item"><a class="nav-link" href="/world/char">Жители</a></li>
       <li class="nav-item"><a class="nav-link" href="/about/">О проекте</a></li>
     </ul>
   </div>
@@ -55,7 +55,7 @@ AppAsset::register($this);
     </div>
 </div>
 
-<footer class="footer">
+<footer class="footer mt-5">
     <div class="container">
         <p class="pull-left">
             <a href="http://forum.rofenrir.ru" target="_metrics" class="btn btn-link">Форум</a>

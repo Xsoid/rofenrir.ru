@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = 'Что такое «Рагнарок Онла�
 ?>
 
 <div class="row">
-    <div class="col-md-9">
+    <div class="col">
         <h1>Что такое «Ragnarok Online Fenrir»</h1>
         <table class="table table-striped" style="font-size:1.3rem;">
           <tbody>
@@ -60,7 +60,7 @@ $this->params['breadcrumbs'][] = 'Что такое «Рагнарок Онла�
           </tbody>
         </table>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-3 d-none d-md-block">
         <div class="bs-component">
             <?= $this->render('_menu') ?>
         </div>

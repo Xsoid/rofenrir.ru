@@ -22,7 +22,7 @@ $this->params['breadcrumbs'][] = 'Жители мир Fenrir';
 
 
 <div class="row">
-    <div class="col-lg-9">
+    <div class="col">
         <p>Показывать:<br></p>
         <?php $form = ActiveForm::begin([
             'action' => ['char'],
@@ -85,7 +85,7 @@ $this->params['breadcrumbs'][] = 'Жители мир Fenrir';
             }
         ]); ?>
     </div>
-    <div class="col-lg-3">
+    <div class="col-md-3 d-none d-md-block">
         <div class="bs-component">
             <?= $this->render('_menu') ?>
         </div>

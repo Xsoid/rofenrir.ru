@@ -12,33 +12,27 @@ $this->registerMetaTag([
     'content' => 'RoFenrir -  русский экспериментальный сервер Ragnarok Online. Бесплатный: без абонентской платы и внутренних платежей.'
 ]);
 ?>
-<div class="site-index">
-
-    <div class="jumbotron" style="background-image:url(img/character-summoner.jpg);background-position:center;">
-        <h1>RoFenrir</h1>
-        <p class="lead">Ragnarok Online Server</p>
-        <p><a class="btn btn-lg btn-success" href="<?= $authUrl ?>">ВХОД</a></p>
-    </div>
-
-    <div class="body-content">
-
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Регистрация</h2>
-                <p>Регистрируйся на сайте и создавай учётные записи на игровом сервере. Один аккаунт управляет несколькими игровыми учётными записями. Количество учётных записей не ограничено.</p>
-                <p><a class="btn btn-default" href="<?= $authUrl ?>">Регистрация</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Скачать клиент</h2>
-                <p>Скачай полный игровой клиент Ragnarok Online. Разархивируй куда хочешь и запусти Fenrir.exe</p>
-                <p><a class="btn btn-default" href="/client">Скачать</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Радоваться</h2>
-                <p>Наслаждайтесь игрой. Если возникнут вопросы воспользуйтесь поиском по сайту или задайте вопрос на форуме. Наше доброжелательное сообщество всегда радо помочь новичкам.</p>
-                <p><a class="btn btn-default" href="http://forum.rofenrir.ru">Форум</a></p>
-            </div>
+<div class="jumbotron col-12" style="background-image:url(img/character-summoner.jpg);background-position:center;">
+    <h1>RoFenrir</h1>
+    <p class="lead">Ragnarok Online Server</p>
+    <p><a class="btn btn-lg btn-success" href="<?= $authUrl ?>">ВХОД</a></p>
+</div>
+<div class="content">
+    <div class="row">
+        <div class="col">
+            <h2>Регистрация</h2>
+            <p>Регистрируйся на сайте и создавай учётные записи в игре. Один аккаунт RPG ID управляет несколькими игровыми учётными записями. Количество учётных записей не ограничено.</p>
+            <p><a class="btn btn-default" href="<?= $authUrl ?>">Регистрация</a></p>
         </div>
-
+        <div class="col">
+            <h2>Скачать клиент</h2>
+            <p>Скачай полный игровой клиент Ragnarok Online. Разархивируй куда хочешь и запусти Fenrir.exe</p>
+            <p><a class="btn btn-default" href="/client">Скачать</a></p>
+        </div>
+        <div class="col">
+            <h2>Радоваться</h2>
+            <p>Наслаждайтесь игрой. Присоединяйтесь к сообществам созданными нашими игроками.</p>
+            <p><a class="btn btn-default" href="http://forum.rofenrir.ru">Форум</a> <a class="btn btn-default" href="https://discord.gg/WMNz35A" target="_metrics">Discord</a></p>
+        </div>
     </div>
 </div>

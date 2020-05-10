@@ -16,10 +16,10 @@ $this->params['breadcrumbs'][] = 'Мир Fenrir';
 
 
 <div class="row">
-    <div class="col-lg-9">
+    <div class="col">
         <p>База актуальных данных для сервера.</p>
     </div>
-    <div class="col-lg-3">
+    <div class="col-md-3 d-none d-md-block">
         <div class="bs-component">
             <?= $this->render('_menu') ?>
         </div>

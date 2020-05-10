@@ -17,7 +17,7 @@ $this->params['breadcrumbs'][] = 'Консольные команды';
 ?>
 
 <div class="row">
-    <div class="col-md-9">
+    <div class="col">
         <h1>Консольные команды</h1>
         <p>Команды набираются прямо в чат и оправляются Enter'ом.<br>
           Знаки < и > служат для обозначения выбираемого параметра и не пишутся, кавычки "" пишутся.</p>
@@ -29,7 +29,7 @@ $this->params['breadcrumbs'][] = 'Консольные команды';
         <h3>Персонаж</h3>
         <p><b>@bodystyle <0-1></b> — смена спрайта, только для третьих профессий. 0 - классический, 1 - альтернативный спрайт jRO</p>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-3 d-none d-md-block">
         <div class="bs-component">
             <?= $this->render('_menu') ?>
         </div>

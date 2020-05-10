@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = 'Путиводитель';
 ?>
 
 <div class="row">
-    <div class="col-md-9">
+    <div class="col">
         <h1>Путиводитель</h1>
         <table class="table table-hover">
           <thead>
@@ -89,7 +89,7 @@ $this->params['breadcrumbs'][] = 'Путиводитель';
           </tbody>
         </table>
     </div>
-    <div class="col-md-3">
+    <div class="col">
         <div class="bs-component">
             <?= $this->render('_menu') ?>
         </div>

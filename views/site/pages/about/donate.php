@@ -9,8 +9,10 @@ $this->registerMetaTag([
 ]);
 $this->registerMetaTag([
      'name' => 'description',
-     'content' => 'RoFenrir -  русский экспериментальный сервер Ragnarok Online. Бесплатный: без абонентской платы и внутренних платежей.'
+     'content' => 'Проект RoFenrir существует только на добравольные пожертвования.'
 ]);
+$this->params['breadcrumbs'][] = ['label' => 'О проекте', 'url' => ['/about/index']];
+$this->params['breadcrumbs'][] = 'Поддержка проекта';
 ?>
 
 <div class="site-index">

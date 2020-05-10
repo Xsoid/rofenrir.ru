@@ -25,5 +25,6 @@ class AppAsset extends AssetBundle
     public $depends = [
         'yii\web\YiiAsset',
         'share\web\Bootstrap4Asset',
+        'share\web\FontAwesome5Asset',
     ];
 }
