@@ -24,14 +24,16 @@ $this->params['breadcrumbs'][] = 'О проекте';
                     <li>Последние непроверенные обновления kRO</li>
                     <li>Минимальные кастомные дополнения</li>
                     <li>Система объединения аккаунтов</li>
-                    <li>Поощрение регистрации гильдии</li>
+                    <li>Нет игровы ГМов</li>
                 </ul>
+                <p>Проект разрабатывается в традициях опенсорс. Никто ничего никому не должен. Если вы хотите что бы проект развивалсмя и обрастал фичами обратите внимание на блок "Помощь проекту".</p>
             </div>
             <div class="col">
                 <h1>Помощь проекту</h1>
                 <p>Ядро сервером является <a href="https://github.com/rathena/rathena" target="_metrics">rAthena</a>, принимайте активное участие в жизни сообщество, предлагайте обновления и улучшения и они в скоре попадут на сервер.</p>
                 <p><a href="https://github.com/Fenrir-Game-Project/rAthena-in-Russian" target="_metrics">Перевод rAthena на Русский язык</a>. Переводите скрипты и добавляйте их в репозиторий.</p>
                 <p><a href="https://github.com/Xsoid/ROrussianRE" target="_metrics">Перевод клиента Ragnarok Online на Русский язык</a>. Переводите файлы и добавляйте их в репозиторий.</p>
+                <p>У проекта отсутствует лаунчер. Если кто-то возьмёт на себя его разработку и поддержку, пишите на fenrir@rofenrir.ru</p>
                 <div class="alert alert-success col-12" role="alert">
                 <div class="row">
                     <a type="button" class="btn btn-light col-2 ml-3" href="/about/donate">ДОНАТы</a>

@@ -16,6 +16,7 @@ $this->registerMetaTag([
     <h1>RoFenrir</h1>
     <p class="lead">Ragnarok Online Server</p>
     <p><a class="btn btn-lg btn-success" href="<?= $authUrl ?>">ВХОД</a></p>
+    <p><small>У нас есть котики</small></p>
 </div>
 <div class="content">
     <div class="row">
@@ -27,7 +28,7 @@ $this->registerMetaTag([
         <div class="col">
             <h2>Скачать клиент</h2>
             <p>Скачай полный игровой клиент Ragnarok Online. Разархивируй куда хочешь и запусти Fenrir.exe</p>
-            <p><a class="btn btn-default" href="/client">Скачать</a></p>
+            <p><a class="btn btn-default" href="/client">Скачать клиент</a></p>
         </div>
         <div class="col">
             <h2>Радоваться</h2>
