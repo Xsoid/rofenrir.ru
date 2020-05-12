@@ -34,11 +34,16 @@ $this->params['breadcrumbs'][] = 'Путиводитель';
           </li>
           <li><a href="job/">Профессии</a></li>
           <li><a href="boevye-kompanony-i-ezdovye-zveri">Боевые компаньоны и ездовые звери</a></li>
-          <li>Корпорация Райс и другие представители Мира Фенрир
+          <li>Мир (Города)
+            <ul>
+              <li><a href="world/brasilis/index">Бразилис</a></li>
+            </ul>
+          </li>
+          <li>Корпорация Райс
             <ul>
               <li><a href="rise/">Корпорация Райс</a></li>
               <li><a href="rise/profsouz">Профсоюз</a></li>
-              <li><a href="rise/guild">Регистрация гильдий через Корпорацию Райс</a></li>
+              <li><a href="rise/guild">Регистрация гильдий</a></li>
               <li><a href="nastavnik">Наставник</a></li>
             </ul>
           </li>

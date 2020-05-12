@@ -46,9 +46,8 @@ $this->params['breadcrumbs'][] = 'О проекте';
     <div class="col-12">
         <h1>Конфигурация сервера</h1>
         <p><span style="font-family: Arial, sans-serif; ">Сервер работает с 25.12.2011</span></p>
-        <p>Основан на: rAthena</p>
-        <p>Механика:&nbsp;<span style="color: rgb(255, 0, 0); "><strong>Renewal</strong></span><br />
-        Мы не будем отступать от выбранного направления основываясь на пожеланиях комьюнити вне зависимости от его количества. Баланс это дела администрации и мы не собираемся никому делегировать эти вопросы. </p>
+        <p>Основан на: rAthena<br>
+        <p>Механика:&nbsp;<span style="color: rgb(255, 0, 0); "><strong>Renewal</strong></span></p>
         <h3 id="reit">Рейты сервера Fenrir</h3>
         <p><strong>Рейты на опыт:&nbsp;</strong>Базовый 15x / Професиональный 15x<br />
         <strong>Рейты дропа обычного лута:&nbsp;</strong>Общий 10x / Исцеляющий&nbsp; 10x&nbsp;/ Полезный 10x / Предметы 10x / Карты 10x<br />

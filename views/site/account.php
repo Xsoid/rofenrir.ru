@@ -21,7 +21,6 @@ $this->params['breadcrumbs'][] = 'Управление профилем';
 <div class="site-index">
     <div class="body-content">
         <h1>Персонажи</h1>
-
         <?php $form = ActiveForm::begin([
             'id' => 'form-signup',
             'options' => [
@@ -32,20 +31,17 @@ $this->params['breadcrumbs'][] = 'Управление профилем';
                 'labelOptions' => ['class' => 'col-md-3 col-lg-3 control-label'],
             ],
         ]); ?>
-            <?= $form->field($model, 'new_user_pass', [
-                'labelOptions' => [
-                    'label' => 'Новый пароль',
-                ],
-            ])->textInput() ?>
-
-            <div class="form-group">
-                <div class="col-md-offset-3 col-md-9 col-lg-offset-3 col-lg-9">
-                    <?= Html::submitButton('Сохранить', ['class' => 'btn btn-primary', 'name' => 'signup-button']) ?>
-                </div>
+        <?= $form->field($model, 'new_user_pass', [
+            'labelOptions' => [
+                'label' => 'Новый пароль',
+            ],
+        ])->textInput() ?>
+        <div class="form-group">
+            <div class="col-md-offset-3 col-md-9 col-lg-offset-3 col-lg-9">
+                <?= Html::submitButton('Сохранить', ['class' => 'btn btn-primary', 'name' => 'signup-button']) ?>
             </div>
-
+        </div>
         <?php ActiveForm::end(); ?>
-
         <table class="table table-bordered table-condensed table-striped">
             <tr>
                 <th>Имя персонажа</th>
