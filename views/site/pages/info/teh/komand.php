@@ -31,7 +31,7 @@ $this->params['breadcrumbs'][] = 'Консольные команды';
     </div>
     <div class="col-md-3 d-none d-md-block">
         <div class="bs-component">
-            <?= $this->render('_menu') ?>
+            <?= $this->render('../_menu') ?>
         </div>
     </div>
 </div>

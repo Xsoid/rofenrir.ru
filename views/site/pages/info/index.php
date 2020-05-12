@@ -50,7 +50,8 @@ $this->params['breadcrumbs'][] = 'Путиводитель';
           <li><a href="rof">Что такое «Ragnarok Online Fenrir»</a></li>
           <li>Управление и интерфейсы
             <ul>
-              <li><a href="komand">Консольные команды</a></li>
+              <li><a href="teh/nav">Навигационная система</a></li>
+              <li><a href="teh/komand">Консольные команды</a></li>
             </ul>
           </li>
         </ul>
