@@ -34,7 +34,7 @@ $this->params['breadcrumbs'][] = 'Путиводитель';
           </li>
           <li><a href="job/">Профессии</a></li>
           <li><a href="boevye-kompanony-i-ezdovye-zveri">Боевые компаньоны и ездовые звери</a></li>
-          <li>Корпорация Райс и другие жители Мира Фенрир
+          <li>Корпорация Райс и другие представители Мира Фенрир
             <ul>
               <li><a href="rise/">Корпорация Райс</a></li>
               <li><a href="rise/profsouz">Профсоюз</a></li>
@@ -48,6 +48,7 @@ $this->params['breadcrumbs'][] = 'Путиводитель';
         <h1>Тех.поддержка</h1>
         <ul>
           <li><a href="rof">Что такое «Ragnarok Online Fenrir»</a></li>
+          <li><a href="teh/reg">Система учёток RoFenrir</a></li>
           <li>Управление и интерфейсы
             <ul>
               <li><a href="teh/nav">Навигационная система</a></li>

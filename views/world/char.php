@@ -85,9 +85,4 @@ $this->params['breadcrumbs'][] = 'Жители мир Fenrir';
             }
         ]); ?>
     </div>
-    <div class="col-md-3 d-none d-md-block">
-        <div class="bs-component">
-            <?= $this->render('_menu') ?>
-        </div>
-    </div>
 </div>

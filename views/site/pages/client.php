@@ -27,6 +27,8 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="alert alert-info" role="alert">
             Клиент обновлен 11.05.2020
         </div>
+        <p>Перед первым входом в игру запустите <b>Setup.exe</b> (рекомендуем запускать с правами Администратора) и укажите настройки игры который вам будут подходить. Обязательно сохраните изменения.</p>
+        <p>Игра запускается через <b>Fenrir.exe</b></p>
     </div>
     <div class="col">
         <p class="h1">Системные требования</p>
@@ -35,7 +37,7 @@ $this->params['breadcrumbs'][] = $this->title;
         256MB RAM,<br> 
         16MB видеопамяти,<br>
         DirectX 8.0,<br> 
-        4GB+ HDD,<br> 
+        5GB+ HDD,<br> 
         доступ в Интернет</p>
     </div>
 </div>
