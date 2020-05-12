@@ -17,77 +17,44 @@ $this->params['breadcrumbs'][] = 'Путиводитель';
 <div class="row">
     <div class="col">
         <h1>Путиводитель</h1>
-        <table class="table table-hover">
-          <thead>
-            <tr>
-              <th scope="col"></th>
-              <th scope="col">Новичку</th>
-              <td scope="col"></td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row"></th>
-              <td><a href="rof">Что такое «Ragnarok Online Fenrir»</a></td>
-              <td></td>
-            </tr>
-            <tr>
-              <th scope="row"></th>
-              <td><a href="boevye-kompanony-i-ezdovye-zveri">Боевые компаньоны и ездовые звери</a></td>
-              <td></td>
-            </tr>
-          </tbody>
-          <thead>
-            <tr>
-              <th scope="col"></th>
-              <th scope="col">Управление и интерфейсы</th>
-              <td scope="col"></td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row"></th>
-              <td><a href="komand">Консольные команды</a></td>
-              <td></td>
-            </tr>
-          </tbody>
-          <thead>
-            <tr>
-              <th scope="col"></th>
-              <th scope="col"><a href="job/">Профессии</a></th>
-              <td scope="col"></td>
-            </tr>
-          </thead>
-          <thead>
-            <tr>
-              <th scope="col"></th>
-              <th scope="col">Корпорация Райс и другие жители Мира Фенрир</th>
-              <td scope="col"></td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row"></th>
-              <td><a href="rise/">Корпорация Райс</a></td>
-              <td></td>
-            </tr>
-            <tr>
-              <th scope="row"></th>
-              <td><a href="rise/profsouz">Профсоюз</a></td>
-              <td></td>
-            </tr>
-            <tr>
-              <th scope="row"></th>
-              <td><a href="rise/guild">Регистрация гильдий через Корпорацию Райс</a></td>
-              <td></td>
-            </tr>
-            <tr>
-              <th scope="row"></th>
-              <td><a href="nastavnik">Наставник</a></td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
+        <ul>
+          <li>Расы
+            <ul>
+            <!--  <li>Люди
+                <ul>
+                  
+                </ul>
+              </li>-->
+              <li>Doram
+                <ul>
+                  <li><a href="doram/one">Первый контакт</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="job/">Профессии</a></li>
+          <li><a href="boevye-kompanony-i-ezdovye-zveri">Боевые компаньоны и ездовые звери</a></li>
+          <li>Корпорация Райс и другие жители Мира Фенрир
+            <ul>
+              <li><a href="rise/">Корпорация Райс</a></li>
+              <li><a href="rise/profsouz">Профсоюз</a></li>
+              <li><a href="rise/guild">Регистрация гильдий через Корпорацию Райс</a></li>
+              <li><a href="nastavnik">Наставник</a></li>
+            </ul>
+          </li>
+        </ul>
+    </div>
+    <div class="col">
+        <h1>Тех.поддержка</h1>
+        <ul>
+          <li><a href="rof">Что такое «Ragnarok Online Fenrir»</a></li>
+          <li>Управление и интерфейсы
+            <ul>
+              <li><a href="komand">Консольные команды</a></li>
+            </ul>
+          </li>
+        </ul>
+    
     </div>
     <div class="col">
         <div class="bs-component">
