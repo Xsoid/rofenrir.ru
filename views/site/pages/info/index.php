@@ -39,6 +39,11 @@ $this->params['breadcrumbs'][] = 'Путиводитель';
               <li><a href="world/brasilis/index">Бразилис</a></li>
             </ul>
           </li>
+          <li><a href="eden/index">Компания Эдем [Eden Group]</a>
+            <ul>
+              <li><a href="eden/instructor_boya">Задания на получение снаряжения</a></li>
+            </ul>
+          </li>
           <li>Корпорация Райс
             <ul>
               <li><a href="rise/">Корпорация Райс</a></li>
