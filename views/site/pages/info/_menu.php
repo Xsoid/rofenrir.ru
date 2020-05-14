@@ -6,4 +6,5 @@ use yii\helpers\Url;
     <a href="/info/job/index" class="list-group-item">Профессии</a>
     <a href="/info/eden/index" class="list-group-item">Компания Эдем</a>
     <a href="/info/rise/index" class="list-group-item">Корпорация Райс</a>
+    <a href="/info/items/index" class="list-group-item">Квестовые предметы</a>
 </div>

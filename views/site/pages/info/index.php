@@ -18,18 +18,9 @@ $this->params['breadcrumbs'][] = 'Путиводитель';
     <div class="col">
         <h1>Путиводитель</h1>
         <ul>
-          <li>Расы
+          <li>Doram
             <ul>
-            <!--  <li>Люди
-                <ul>
-                  
-                </ul>
-              </li>-->
-              <li>Doram
-                <ul>
-                  <li><a href="doram/one">Первый контакт</a></li>
-                </ul>
-              </li>
+              <li><a href="doram/one">Первый контакт</a></li>
             </ul>
           </li>
           <li><a href="job/">Профессии</a></li>
@@ -52,6 +43,7 @@ $this->params['breadcrumbs'][] = 'Путиводитель';
               <li><a href="nastavnik">Наставник</a></li>
             </ul>
           </li>
+          <li><a href="items/">Квесты для получения предметов</a></li>
         </ul>
     </div>
     <div class="col">
