@@ -56,6 +56,13 @@ th.sorted[data-order="1"]::after {
                     <td>Головной убор</td>
                 </tr>
                 <tr>
+                    <td>5121</td>
+                    <th><a href="5121">Zealotus Mask</a></th>
+                    <td>Маска Зилотус</td>
+                    <td>Экипировка</td>
+                    <td>Головной убор</td>
+                </tr>
+                <tr>
                     <td>5436</td>
                     <th><a href="5436">Bride's Corolla</a></th>
                     <td>Венок невесты</td>
