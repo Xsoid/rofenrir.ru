@@ -18,13 +18,18 @@ $this->params['breadcrumbs'][] = 'Путиводитель';
     <div class="col">
         <h1>Путиводитель</h1>
         <ul>
-          <li>Doram
+          <li>Люди
             <ul>
-              <li><a href="doram/one">Первый контакт</a></li>
+              <li><a href="human/job/">Профессии</a></li>
+              <li><a href="human/boevye-kompanony-i-ezdovye-zveri">Боевые компаньоны и ездовые звери</a></li>
             </ul>
           </li>
-          <li><a href="job/">Профессии</a></li>
-          <li><a href="boevye-kompanony-i-ezdovye-zveri">Боевые компаньоны и ездовые звери</a></li>
+          <li>Дорам [Doram]
+            <ul>
+              <li><a href="doram/one">Первый контакт</a></li>
+              <li>Summoner</li>
+            </ul>
+          </li>
           <li>Мир (Города)
             <ul>
               <li><a href="world/brasilis/index">Бразилис</a></li>
@@ -35,9 +40,8 @@ $this->params['breadcrumbs'][] = 'Путиводитель';
               <li><a href="eden/instructor_boya">Задания на получение снаряжения</a></li>
             </ul>
           </li>
-          <li>Корпорация Райс
+          <li><a href="rise/">Корпорация Райс</a>
             <ul>
-              <li><a href="rise/">Корпорация Райс</a></li>
               <li><a href="rise/profsouz">Профсоюз</a></li>
               <li><a href="rise/guild">Регистрация гильдий</a></li>
               <li><a href="nastavnik">Наставник</a></li>

@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = 'О проекте';
 <div class="row">
     <div class="col">
         <div class="row">
-            <div class="col">
+            <div class="col-5">
                 <h1>Особенности сервера</h1>
                 <ul>
                     <li>Никакой платы и внутренних покупок</li>
@@ -34,6 +34,7 @@ $this->params['breadcrumbs'][] = 'О проекте';
                 <p><a href="https://github.com/Fenrir-Game-Project/rAthena-in-Russian" target="_metrics">Перевод rAthena на Русский язык</a>. Переводите скрипты и добавляйте их в репозиторий.</p>
                 <p><a href="https://github.com/Xsoid/ROrussianRE" target="_metrics">Перевод клиента Ragnarok Online на Русский язык</a>. Переводите файлы и добавляйте их в репозиторий.</p>
                 <p>У проекта отсутствует лаунчер. Если кто-то возьмёт на себя его разработку и поддержку, пишите на fenrir@rofenrir.ru</p>
+                <p>Публичная часть сайта rofenrir.ru доступна для совместного редактирования и расширения на <a href="https://github.com/Xsoid/rofenrir.ru" target="_metrics">GitHub</a>.</p>
                 <div class="alert alert-success col-12" role="alert">
                 <div class="row">
                     <a type="button" class="btn btn-light col-2 ml-3" href="/about/donate">ДОНАТы</a>

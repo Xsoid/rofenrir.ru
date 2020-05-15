@@ -12,7 +12,8 @@ $this->registerMetaTag([
      'content' => 'Shadow Chaser'
 ]);
 $this->params['breadcrumbs'][] = ['label' => 'Путиводитель', 'url' => ['info/index']];
+$this->params['breadcrumbs'][] = 'Люди';
 $this->params['breadcrumbs'][] = 'Профессии';
+$this->params['breadcrumbs'][] = 'Shadow Chaser';
 ?>
-
-    <h1>Shadow Chaser</h1>
+<h1>Shadow Chaser</h1>
