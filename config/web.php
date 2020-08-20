@@ -2,25 +2,26 @@
 
 $config = [
     'components' => [
-        'request' => [
-            'scriptUrl' => 'index.php',
-        ],
-        'errorHandler' => [
-            'errorAction' => 'site/error',
-        ],
         'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
             'rules' => [
-                'profile' => 'site/profile',
-                'account' => 'site/account',
+                'login' => 'site/login',
                 [
                     'class' => 'share\web\ViewUrlRule',
-                    'defaultRoute' => 'site',
                 ],
             ],
         ],
     ],
+    'container' => [
+        'definitions' => [
+            'yii\widgets\LinkPager' => [
+                'options' => ['class' => 'btn-group', 'tag' => 'div'],
+                'linkContainerOptions' => ['tag' => 'div'],
+                'pageCssClass' => ['class' => 'btn btn-light'],
+                'prevPageCssClass' => ['class' => 'prev btn btn-light'],
+                'nextPageCssClass' => ['class' => 'next btn btn-light'],
+            ],
+        ],
+    ]
 ];
 
 return $config;

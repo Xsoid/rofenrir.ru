@@ -14,3 +14,8 @@ return [
         ],
     ],
 ];
+
+require_once(Yii::getAlias('@share/rbac/helper.php'));
+$items = extendWithModuleRbacFileItems($items, 'items');
+
+return $items;
