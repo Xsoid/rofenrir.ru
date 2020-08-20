@@ -67,6 +67,9 @@ $config = [
             'identityClass' => 'app\models\User',
             'enableAutoLogin' => true,
         ],
+    ],
+    'params' => $params,
+    'modules' => [
         'share-file' => [
             'class' => 'share\modules\share_file\ShareFileModule',
             'baseDir' => dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'static.rpgid.ru',
@@ -76,7 +79,6 @@ $config = [
             'class' => 'share\modules\blog\BlogModule',
         ],
     ],
-    'params' => $params,
 ];
 
 return $config;
