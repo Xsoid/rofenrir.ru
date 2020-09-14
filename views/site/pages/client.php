@@ -24,9 +24,9 @@ $this->params['breadcrumbs'][] = $this->title;
             <a href="https://mega.nz/#F!wZBDQITT!psbXseswyDxf2AjyWxpHcA" target="_metrics">Хранилище на MEGA</a><br>
             <a href="https://1drv.ms/u/s!AqQBBXyzYdVhiJwaQKQw65f0syknow?e=BuUnEJ" target="_metrics">Хранилище на OneDrive</a>
         </p>
-        <div class="alert alert-info" role="alert">
+        <!-- <div class="alert alert-info" role="alert">
             Клиент обновлен 11.05.2020
-        </div>
+        </div> -->
         <p>Перед первым входом в игру запустите <b>Setup.exe</b> (рекомендуем запускать с правами Администратора) и укажите настройки игры который вам будут подходить. Обязательно сохраните изменения.</p>
         <p>Игра запускается через <b>Fenrir.exe</b></p>
     </div>

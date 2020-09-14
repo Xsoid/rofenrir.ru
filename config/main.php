@@ -78,6 +78,12 @@ $config = [
         'blog' => [
             'class' => 'share\modules\blog\BlogModule',
         ],
+//        'organization' => [
+//            'class' => 'share\modules\organization\OrganizationModule',
+//        ],
+//        'calendar' => [
+//            'class' => 'share\modules\calendar\CalendarModule',
+//        ],
     ],
 ];
 

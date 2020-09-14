@@ -52,6 +52,13 @@ AppAsset::register($this);
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
         <?= $content ?>
+
+<div class="alert alert-danger mt-5" role="alert">
+  <b>Внимание!</b> Сервер переехал поэтому установка патча <b>RoFenrir-18.06.9</b> обязательна для получения доступа к игровому миру.<br>
+  <a href="/client" style="color: #fff;">Скачать её можно с любого удобного хранилища</a>.<br>
+  Полной версии клиента пока не перезалили, доступна старая которую необходимо пропатчить, т.к. надеевся в скором времени выложить новую полную версию клиента нового поколения.
+</div>
+
     </div>
 </div>
 
@@ -74,8 +81,8 @@ AppAsset::register($this);
 
         <p class="pull-right">&copy; Project Fenrir 2011-<?= date('Y') ?> [18+]<br>
         &copy; 2002-<?= date('Y') ?> Gravity Co., Ltd.</p>
-        <p class="pull-right">Версия клиента: 18.06.8<br>
-        Обновление сервера: 11.05.2020</p>
+        <p class="pull-right">Версия клиента: 18.06.9<br>
+        Обновление сервера: 14.09.2020</p>
     </div>
 </footer>
 
