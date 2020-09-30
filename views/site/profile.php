@@ -46,7 +46,6 @@ $this->registerMetaTag([
             <tr>
                 <th>Логин</th>
                 <th>E-mail</th>
-                <th>Пол</th>
                 <th>Дата последнего входа</th>
                 <th></th>
             </tr>
@@ -54,7 +53,6 @@ $this->registerMetaTag([
                 <tr>
                     <td><?= $account->userid ?></td>
                     <td><?= $account->email ?></td>
-                    <td><?= $account->sex ?></td>
                     <td><?= $account->lastlogin ?></td>
                     <td><a href="<?= Url::to(['/site/account', 'id' => $account->account_id]) ?>">Подробнее</a></td>
                 </tr>

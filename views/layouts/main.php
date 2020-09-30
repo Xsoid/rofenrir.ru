@@ -81,7 +81,7 @@ AppAsset::register($this);
         <p class="pull-right">&copy; Project Fenrir 2011-<?= date('Y') ?> [18+]<br>
         &copy; 2002-<?= date('Y') ?> Gravity Co., Ltd.</p>
         <p class="pull-right">Версия клиента: 18.06.10<br>
-        Обновление сервера: 22.09.2020</p>
+        Обновление сервера: 30.09.2020</p>
     </div>
 </footer>
 

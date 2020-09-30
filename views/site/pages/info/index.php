@@ -45,6 +45,7 @@ $this->params['breadcrumbs'][] = 'Путиводитель';
               <li><a href="rise/profsouz">Профсоюз</a></li>
               <li><a href="rise/guild">Регистрация гильдий</a></li>
               <li><a href="nastavnik">Наставник</a></li>
+              <li><a href="rise/home_seller">Продавци родины</a></li>
             </ul>
           </li>
           <li><a href="items/">Квесты для получения предметов</a></li>

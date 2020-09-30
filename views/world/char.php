@@ -9,7 +9,7 @@ use yii\widgets\ActiveForm;
 $this->title = 'Жители мир Fenrir - Ragnarok Online Server';
 $this->registerMetaTag([
     'name' => 'keywords',
-    'content' => 'Ragnarok Online, Renewal, Fenrir, RoFenrir, сервер, бесплатная игра'
+    'content' => 'Ragnarok Online, Fenrir, RoFenrir, сервер, бесплатная игра'
 ]);
 $this->registerMetaTag([
     'name' => 'description',

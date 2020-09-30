@@ -49,6 +49,7 @@ $this->params['breadcrumbs'][] = 'Управление профилем';
                 <th>Профессия</th>
                 <th>Базовый уровень</th>
                 <th>Джоб уровень</th>
+                <th>Зен</th>
                 <th>Дата последнего входа</th>
             </tr>
             <? foreach ($model->chars as $char): ?>
@@ -58,6 +59,7 @@ $this->params['breadcrumbs'][] = 'Управление профилем';
                     <td><?= $char->className ?></td>
                     <td><?= $char->base_level ?></td>
                     <td><?= $char->job_level ?></td>
+                    <td><?= $char->zeny ?></td>
                     <td><?= $char->last_login ?></td>
                 </tr>
             <? endforeach; ?>
