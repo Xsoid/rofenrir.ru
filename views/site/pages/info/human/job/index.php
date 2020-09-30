@@ -42,6 +42,10 @@ $this->params['breadcrumbs'][] = 'Профессии';
         <img src="/img/content/info/job/sprite/4054_2_1.gif">
         <h5>Рунмейстер [Rune Knight]</h5>
       </td>
+      <td>
+        <img src="/img/content/info/job/sprite/4252_1_1.gif">
+        <img src="/img/content/info/job/sprite/4252_1_1.gif">
+      </td>
     </tr>
     <tr>
       <td>
@@ -57,6 +61,10 @@ $this->params['breadcrumbs'][] = 'Профессии';
         <img src="/img/content/info/job/sprite/4066_1_1.gif">
         <img src="/img/content/info/job/sprite/4066_2_1.gif">
         <h5>Тамплиер [Royal Guard]</h5>
+      </td>
+      <td>
+        <img src="/img/content/info/job/sprite/4258_1_1.gif">
+        <img src="/img/content/info/job/sprite/4258_2_1.gif">
       </td>
     </tr>
     <tr>
@@ -78,6 +86,10 @@ $this->params['breadcrumbs'][] = 'Профессии';
         <img src="/img/content/info/job/sprite/4055_2_1.gif">
         <h5>Чародей [Warlock]</h5>
       </td>
+      <td>
+        <img src="/img/content/info/job/sprite/4255_1_1.gif">
+        <img src="/img/content/info/job/sprite/4255_1_2.gif">
+      </td>
     </tr>
     <tr>
       <td>
@@ -93,6 +105,10 @@ $this->params['breadcrumbs'][] = 'Профессии';
         <img src="/img/content/info/job/sprite/4067_1_1.gif">
         <img src="/img/content/info/job/sprite/4067_2_1.gif">
         <h5>Элементалист [Sorcerer]</h5>
+      </td>
+      <td>
+        <img src="/img/content/info/job/sprite/4261_1_1.gif">
+        <img src="/img/content/info/job/sprite/4261_2_1.gif">
       </td>
     </tr>
     <tr>
@@ -114,6 +130,10 @@ $this->params['breadcrumbs'][] = 'Профессии';
         <img src="/img/content/info/job/sprite/4058_2_1.gif">
         <h5>Механик [Mechanic]</h5>
       </td>
+      <td>
+        <img src="/img/content/info/job/sprite/4253_1_1.gif">
+        <img src="/img/content/info/job/sprite/4253_2_1.gif">
+      </td>
     </tr>
     <tr>
       <td>
@@ -129,6 +149,10 @@ $this->params['breadcrumbs'][] = 'Профессии';
         <img src="/img/content/info/job/sprite/4071_1_1.gif">
         <img src="/img/content/info/job/sprite/4071_2_1.gif">
         <h5>Генетик [Genetic]</h5>
+      </td>
+      <td>
+        <img src="/img/content/info/job/sprite/4259_1_1.gif">
+        <img src="/img/content/info/job/sprite/4259_2_1.gif">
       </td>
     </tr>
     <tr>
@@ -150,6 +174,10 @@ $this->params['breadcrumbs'][] = 'Профессии';
         <img src="/img/content/info/job/sprite/4057_2_1.gif">
         <h5>Архиепископ [Arch Bishop]</h5>
       </td>
+      <td>
+        <img src="/img/content/info/job/sprite/4256_1_1.gif">
+        <img src="/img/content/info/job/sprite/4256_2_1.gif">
+      </td>
     </tr>
     <tr>
       <td>
@@ -165,6 +193,10 @@ $this->params['breadcrumbs'][] = 'Профессии';
         <img src="/img/content/info/job/sprite/4070_1_1.gif">
         <img src="/img/content/info/job/sprite/4070_2_1.gif">
         <h5>Отшельник [Sura]</h5>
+      </td>
+      <td>
+        <img src="/img/content/info/job/sprite/4262_1_1.gif">
+        <img src="/img/content/info/job/sprite/4262_2_1.gif">
       </td>
     </tr>
     <tr>
@@ -186,6 +218,10 @@ $this->params['breadcrumbs'][] = 'Профессии';
         <img src="/img/content/info/job/sprite/4059_2_1.gif">
         <h5>Каратель [Guillotine Cross]</h5>
       </td>
+      <td>
+        <img src="/img/content/info/job/sprite/4254_1_1.gif">
+        <img src="/img/content/info/job/sprite/4254_2_1.gif">
+      </td>
     </tr>
     <tr>
       <td>
@@ -201,6 +237,10 @@ $this->params['breadcrumbs'][] = 'Профессии';
         <img src="/img/content/info/job/sprite/4072_1_1.gif">
         <img src="/img/content/info/job/sprite/4072_2_1.gif">
         <h5>Преследователь [Shadow Chaser]</h5>
+      </td>
+      <td>
+        <img src="/img/content/info/job/sprite/4260_1_1.gif">
+        <img src="/img/content/info/job/sprite/4260_2_1.gif">
       </td>
     </tr>
     <tr>
@@ -222,6 +262,10 @@ $this->params['breadcrumbs'][] = 'Профессии';
         <img src="/img/content/info/job/sprite/4056_2_1.gif">
         <h5>Рейнджер [Ranger]</h5>
       </td>
+      <td>
+        <img src="/img/content/info/job/sprite/4257_1_1.gif">
+        <img src="/img/content/info/job/sprite/4257_2_1.gif">
+      </td>
     </tr>
     <tr>
       <td>
@@ -235,6 +279,9 @@ $this->params['breadcrumbs'][] = 'Профессии';
       <td>
         <img src="/img/content/info/job/sprite/4068_1_1.gif">
         <h5>Маэстро [Minstrel]</h5>
+      </td>
+      <td>
+        <img src="/img/content/info/job/sprite/4263_1_1.gif">
       </td>
     </tr>
     <tr>
@@ -250,6 +297,9 @@ $this->params['breadcrumbs'][] = 'Профессии';
         <img src="/img/content/info/job/sprite/4069_2_1.gif">
         <h5>Муза [Wanderer]</h5>
       </td>
+      <td>
+        <img src="/img/content/info/job/sprite/4264_2_1.gif">
+      </td>
     </tr>
     <tr>
       <td>
@@ -260,6 +310,7 @@ $this->params['breadcrumbs'][] = 'Профессии';
         <img src="/img/content/info/job/sprite-gif/23.gif">
         <h5>Экспертный Новичок<br>[Ex. Super Novice]</h5>
       </td>
+      <td></td>
       <td></td>
       <td></td>
     </tr>
@@ -280,6 +331,7 @@ $this->params['breadcrumbs'][] = 'Профессии';
         <h5>Звёздный лорд</h5>
       </td>
       <td></td>
+      <td></td>
     </tr>
     <tr>
       <td>
@@ -293,6 +345,7 @@ $this->params['breadcrumbs'][] = 'Профессии';
         <h5>Жнец душ</h5>
       </td>
       <td></td>
+      <td></td>
     </tr>
       <td rowspan="2">
         <img src="/img/content/info/job/sprite-gif/25.gif">
@@ -304,12 +357,14 @@ $this->params['breadcrumbs'][] = 'Профессии';
       </td>
       <td></td>
       <td></td>
+      <td></td>
     </tr>
     <tr>
       <td>
         <img src="/img/content/info/job/sprite-gif/4212.gif">
         <h5>Оборо [Oboro]</h5>
       </td>
+      <td></td>
       <td></td>
       <td></td>
     </tr>
@@ -323,6 +378,7 @@ $this->params['breadcrumbs'][] = 'Профессии';
         <img src="/img/content/info/job/sprite/4215_2_1.gif">
         <h5>Мятежник [Rebellion]</h5>
       </td>
+      <td></td>
       <td></td>
       <td></td>
     </tr>
