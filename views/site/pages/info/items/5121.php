@@ -9,7 +9,7 @@ $this->registerMetaTag([
 ]);
 $this->registerMetaTag([
      'name' => 'description',
-     'content' => ''
+     'content' => 'Гайд по получению Маски Зилотуса.'
 ]);
 $this->params['breadcrumbs'][] = ['label' => 'Путиводитель', 'url' => ['info/index']];
 $this->params['breadcrumbs'][] = ['label' => 'Квестовые предметы', 'url' => ['info/items/index']];

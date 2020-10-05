@@ -7,7 +7,7 @@ $this->registerMetaTag([
 ]);
 $this->registerMetaTag([
      'name' => 'description',
-     'content' => ''
+     'content' => 'Инсттрукция по получению снаряжения в Эдеме, для игры Ragnarok Online.'
 ]);
 $this->params['breadcrumbs'][] = ['label' => 'Путиводитель', 'url' => ['info/index']];
 $this->params['breadcrumbs'][] = ['label' => 'Компания Эдем', 'url' => ['info/eden/index']];

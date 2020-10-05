@@ -44,7 +44,7 @@ $this->params['breadcrumbs'][] = 'Профессии';
       </td>
       <td>
         <img src="/img/content/info/job/sprite/4252_1_1.gif">
-        <img src="/img/content/info/job/sprite/4252_1_1.gif">
+        <img src="/img/content/info/job/sprite/4252_2_1.gif">
       </td>
     </tr>
     <tr>
@@ -88,7 +88,7 @@ $this->params['breadcrumbs'][] = 'Профессии';
       </td>
       <td>
         <img src="/img/content/info/job/sprite/4255_1_1.gif">
-        <img src="/img/content/info/job/sprite/4255_1_2.gif">
+        <img src="/img/content/info/job/sprite/4255_2_1.gif">
       </td>
     </tr>
     <tr>
