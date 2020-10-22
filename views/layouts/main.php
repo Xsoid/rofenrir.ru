@@ -53,10 +53,10 @@ AppAsset::register($this);
         ]) ?>
         <?= $content ?>
 
-<div class="alert alert-danger mt-5" role="alert">
-  <b>Внимание!</b> Сервер переехал поэтому если вы не можете подключиться, установите крайний патч <b>RoFenrir-18.06.10</b>.<br>
-  <a href="/client" style="color: #fff;">Скачать её можно с любого удобного хранилища</a>.
-</div>
+    <? /* <div class="alert alert-danger mt-5" role="alert">
+      <b>Внимание!</b> Сервер переехал поэтому если вы не можете подключиться, установите крайний патч <b>RoFenrir-18.06.10</b>.<br>
+      <a href="/client" style="color: #fff;">Скачать её можно с любого удобного хранилища</a>.
+    </div> */ ?>
 
     </div>
 </div>
@@ -80,8 +80,7 @@ AppAsset::register($this);
 
         <p class="pull-right">&copy; Project Fenrir 2011-<?= date('Y') ?> [18+]<br>
         &copy; 2002-<?= date('Y') ?> Gravity Co., Ltd.</p>
-        <p class="pull-right">Версия клиента: 18.06.10<br>
-        Обновление сервера: 30.09.2020</p>
+        <p class="pull-right"></p>
     </div>
 </footer>
 
