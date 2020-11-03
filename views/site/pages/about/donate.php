@@ -22,7 +22,7 @@ $this->params['breadcrumbs'][] = 'Поддержка проекта';
 
         <p>Проект полностью некоммерческий. Никакой абонентской платы или внутренних покупок. Оказанная материальная поддержка идет на развитие проекта.  Принимаются только добровольные пожертвования от лиц которым небезразличен наш общий мир.</p>
 
-        <iframe src="https://money.yandex.ru/quickpay/shop-widget?writer=buyer&targets=%D0%94%D0%BE%D0%B1%D1%80%D0%BE%D0%B2%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%B2%D0%B7%D0%BD%D0%BE%D1%81&targets-hint=&default-sum=&button-text=11&payment-type-choice=on&fio=on&mail=on&hint=&successURL=&quickpay=shop&account=41001537616041" width="423" height="215" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+        <iframe src="https://yoomoney.ru/quickpay/shop-widget?writer=buyer&targets=&targets-hint=&default-sum=&button-text=11&payment-type-choice=on&fio=on&mail=on&hint=&successURL=https%3A%2F%2Frofenrir.ru%2Fabout%2Fdonate&quickpay=shop&account=41001537616041" width="423" height="215" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
         
         <p>Спасибо за вашу поддержку.</p>
         <p>При возникновении вопросов связаться с администрацией можно по электронной почте fenrir@rofenrir.ru</p>
