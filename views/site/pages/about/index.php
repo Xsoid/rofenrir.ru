@@ -32,7 +32,7 @@ $this->params['breadcrumbs'][] = 'О проекте';
             <div class="col">
                 <h1>Помощь проекту</h1>
                 <p>Ядро сервером является <a href="https://github.com/rathena/rathena" target="_metrics">rAthena</a>, принимайте активное участие в жизни сообщество, предлагайте обновления и улучшения и они в скоре попадут на сервер.</p>
-                <p><a href="https://github.com/Fenrir-Game-Project/rAthena-in-Russian" target="_metrics">Перевод rAthena на Русский язык</a>. Переводите скрипты и добавляйте их в репозиторий.</p>
+                <p><a href="https://github.com/Xsoid/rAthena-in-Russian" target="_metrics">Перевод rAthena на Русский язык</a>. Переводите скрипты и добавляйте их в репозиторий.</p>
                 <p><a href="https://github.com/Xsoid/ROrussianRE" target="_metrics">Перевод клиента Ragnarok Online на Русский язык</a>. Переводите файлы и добавляйте их в репозиторий.</p>
                 <p>У проекта отсутствует лаунчер. Если кто-то возьмёт на себя его разработку и поддержку, пишите на fenrir@rofenrir.ru</p>
                 <p>Публичная часть сайта rofenrir.ru доступна для совместного редактирования и расширения на <a href="https://github.com/Xsoid/rofenrir.ru" target="_metrics">GitHub</a>.</p>
