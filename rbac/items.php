@@ -1,17 +1,21 @@
 <?php
-return [
+$items = [
     'moderator' => [
         'type' => 1,
         'description' => 'Модератор',
-        'ruleName' => 'userGroup',
+        'ruleName' => 'userRpgidGroup',
     ],
     'admin' => [
         'type' => 1,
-        'description' => 'Администратор сайта',
-        'ruleName' => 'userGroup',
+        'description' => 'Админ',
+        'ruleName' => 'userRpgidGroup',
         'children' => [
             'moderator',
         ],
+    ],
+    'user' => [
+        'type' => 1,
+        'description' => 'Пользователь',
     ],
 ];
 

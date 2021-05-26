@@ -54,7 +54,7 @@ $this->params['breadcrumbs'][] = 'Что такое «Рагнарок Онла�
             <tr>
               <td style="text-align:center;"><div style="margin-top:1.5rem;width:160px;height:100px;background-color:#dedede;border-radius:7px;"><img src="/img/content/info/novice/g_about_06.png"></div></td>
               <td>
-                <h4>rAthena-in-Russian</h4>Открытый проект по переводу rAthena на русский язык основанный Fenrir Game Project<br><a href="https://github.com/Fenrir-Game-Project/rAthena-in-Russian" target="_blank">Группа rAthena-in-Russian</a>
+                <h4>rAthena-in-Russian</h4>Открытый проект по переводу rAthena на русский язык основанный Fenrir Game Project<br><a href="https://github.com/Xsoid/rAthena-in-Russian" target="_blank">Группа rAthena-in-Russian</a>
               </td>
             </tr>
           </tbody>
