@@ -40,6 +40,7 @@ AppAsset::register($this);
     <ul class="navbar-nav">
       <li class="nav-item"><a class="nav-link" href="/client">Клиент</a></li>
       <li class="nav-item"><a class="nav-link" href="/info/">Информация</a></li>
+      <li class="nav-item"><a class="nav-link" href="/blog/">Статьи</a></li>
       <li class="nav-item"><a class="nav-link" href="/world/char">Жители</a></li>
       <li class="nav-item"><a class="nav-link" href="/about/">О проекте</a></li>
     </ul>
