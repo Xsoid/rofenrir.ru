@@ -39,7 +39,7 @@ $this->registerMetaTag([
         <div class="col">
             <h2>Радоваться</h2>
             <p>Наслаждайтесь игрой. Присоединяйтесь к сообществам созданными нашими игроками.</p>
-            <p><a class="btn btn-default" href="http://forum.rofenrir.ru">Форум</a> <a class="btn btn-default" href="https://discord.gg/WMNz35A" target="_metrics">Discord</a></p>
+            <p><a class="btn btn-default" href="https://discord.gg/uetZrN6Sus" target="_metrics">Discord</a></p>
         </div>
         <div class="col-12">
             <p><small>* Для быстрой регистрации можете воспользоваться любимой соц.сетью и авторизовываться через неё.<br>

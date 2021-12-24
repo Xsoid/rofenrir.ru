@@ -26,7 +26,7 @@ $this->params['breadcrumbs'][] = 'На поиски щенков!';
         <p><img src="/img/content/info/world/brasilis/523781719650.jpg"></p>
         <p>3. Возвращайтесь к Анджело, он наградит вас опытом.</p>
         <hr>
-        <p>Автор: <a href="http://forum.rofenrir.ru/index.php?/profile/114-vakhet/" target="_metrics">Vakhet</a></p>
+        <p>Автор: @Vakhet</p>
     </div>
     <div class="col-md-3 d-none d-md-block">
         <div class="bs-component">

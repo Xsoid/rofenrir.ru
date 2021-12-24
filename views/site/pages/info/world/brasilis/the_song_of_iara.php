@@ -28,7 +28,7 @@ $this->params['breadcrumbs'][] = 'Песнь Иары';
         <p><img src="/img/content/info/world/brasilis/a356768839b6.jpg"></p>
         <p>Примечание: Если выслушать песню не имея лекарства, получите статус Confusion или Curse на 1 минуту.</p>
         <hr>
-        <p>Автор: <a href="http://forum.rofenrir.ru/index.php?/profile/114-vakhet/" target="_metrics">Vakhet</a></p>
+        <p>Автор: @Vakhet</p>
     </div>
     <div class="col-md-3 d-none d-md-block">
         <div class="bs-component">

@@ -35,7 +35,7 @@ $this->params['breadcrumbs'][] = 'Бразилис';
             <li><a href="lost_puppies_quest">На поиски щенков!</a> <span class="badge badge-secondary">Повторяемый</span></li>
         </ul>
         <hr>
-        <p>Автор: <a href="http://forum.rofenrir.ru/index.php?/profile/114-vakhet/" target="_metrics">Vakhet</a></p>
+        <p>Автор: @Vakhet</p>
     </div>
     <div class="col-md-3 d-none d-md-block">
         <div class="bs-component">

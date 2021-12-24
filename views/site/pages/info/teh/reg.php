@@ -39,7 +39,7 @@ $this->params['breadcrumbs'][] = 'Система учёток RoFenrir';
         <p class="text-center"><img class="border border-dark" src="/img/content/info/teh/reg/reg-05.png"></p>
         <p><b>Всё, можно играть.</b></p>
         <hr>
-        <p>Статья написана <a href="http://forum.rofenrir.ru/index.php?/profile/115-akaineko-astasi/" target="_metrics">Akaineko Astasi</a></p>
+        <p>Статья написана @Akaineko</p>
     </div>
     <div class="col-md-3 d-none d-md-block">
         <div class="bs-component">

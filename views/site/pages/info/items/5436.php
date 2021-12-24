@@ -41,7 +41,7 @@ $this->params['breadcrumbs'][] = "Bride's Corolla";
         <p><img src="/img/content/info/items/b16a77743546.png"></p>
         <p>Она ответит, что делает венки. Попросите её сделать вам тоже. Она скажет, какой лут принести, или, если он у вас уже с собой, просто сделает венок.</p>
         <hr>
-        <p>Автор: <a href="http://forum.rofenrir.ru/index.php?/profile/115-akaineko-astasi/" target="_metrics">Akaineko Astasi</a></p>
+        <p>Автор: @Akaineko</p>
     </div>
     <div class="col-md-3 d-none d-md-block">
         <div class="bs-component">

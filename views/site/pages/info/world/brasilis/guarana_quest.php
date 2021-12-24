@@ -40,7 +40,7 @@ $this->params['breadcrumbs'][] = 'История о Водяной Лилии Б
         <p>10. Идите к кондитеру, он сделает вам из ягоды удивительную конфету. Теперь вы можете покупать у него эти конфеты за 4.000 зени.</p>
         <p>Примечание: Конфета увеличивает ASPD на 10% в течение 1 часа, и дает эффект Increase Agility 5 уровня.</p>
         <hr>
-        <p>Автор: <a href="http://forum.rofenrir.ru/index.php?/profile/114-vakhet/" target="_metrics">Vakhet</a></p>
+        <p>Автор: @Vakhet</p>
     </div>
     <div class="col-md-3 d-none d-md-block">
         <div class="bs-component">

@@ -38,7 +38,7 @@ $this->params['breadcrumbs'][] = 'История о Водяной Лилии Б
         <p>9. Возвращайтесь к Джазире и вручите ей Водяную Лилию. В знак благодарности она подарит вам шапку Water Lily Hat с одной из четырех карт - Leib Olmai Card, Dryad Card, Leaf Cat Card и Giant Hornet Card (выбирается случайным образом).</p>
         <p>10. Вернитесь к Кармен и расскажите о случившемся. Она наградит вас опытом.</p>
         <hr>
-        <p>Автор: <a href="http://forum.rofenrir.ru/index.php?/profile/114-vakhet/" target="_metrics">Vakhet</a></p>
+        <p>Автор: @Vakhet</p>
     </div>
     <div class="col-md-3 d-none d-md-block">
         <div class="bs-component">

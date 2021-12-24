@@ -28,7 +28,7 @@ $this->params['breadcrumbs'][] = 'Sunglasses [1]';
         <p>2. Мазеф [Maseph] находится к северу от Моррока. Дайте ему обычные солнцезащитные очки плату в 400.000 зени, и он с удовольствием прослотит их.</p>
         <p><img src="/img/content/info/items/484aef91139f.jpg"></p>
         <hr>
-        <p>Автор: <a href="http://forum.rofenrir.ru/index.php?/profile/114-vakhet/" target="_metrics">Vakhet</a></p>
+        <p>Автор: @Vakhet</p>
     </div>
     <div class="col-md-3 d-none d-md-block">
         <div class="bs-component">
