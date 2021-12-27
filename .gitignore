@@ -30,3 +30,4 @@ sftp-config.json
 
 # other
 /tests
+/views/site/pages/about/_gratitude.php
