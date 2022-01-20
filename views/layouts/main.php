@@ -64,7 +64,7 @@ AppAsset::register($this);
     <div class="container">
         <p class="pull-left">
             <a href="https://discord.gg/uetZrN6Sus" target="_metrics" class="btn btn-link">Discord</a>
-            <a href="/about/donate" target="_metrics" class="btn btn-link">Поддержка</a>
+            <a href="/about/donate" class="btn btn-link">Поддержка</a>
             <? if (!Yii::$app->user->isGuest): ?>
                 <a href="/profile" class="btn btn-link">Профиль</a>
                 <?= Html::beginForm(['/site/logout'], 'post', ['style'=>'float:left;'])
