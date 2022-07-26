@@ -7,7 +7,7 @@ $items = [
     ],
     'admin' => [
         'type' => 1,
-        'description' => 'Админ',
+        'description' => 'Администратор',
         'ruleName' => 'userRpgidGroup',
         'children' => [
             'moderator',
