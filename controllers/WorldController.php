@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use Yii;
 use app\models\CharSearch;
+use app\models\GuildSearch;
 
 class WorldController extends \yii\web\Controller
 {
@@ -21,6 +22,17 @@ class WorldController extends \yii\web\Controller
     public function actionIndex()
     {
         return $this->render('index');
+    }
+
+     public function actionGuild()
+    {
+        $searchModel = new GuildSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+
+        return $this->render('guild', [
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider,
+        ]);
     }
 
 }

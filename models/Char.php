@@ -110,7 +110,7 @@ class Char extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'char_id' => 'Char ID',
+            'char_id' => 'Fenrir ID',
             'account_id' => 'Account ID',
             'char_num' => 'Char Num',
             'name' => 'Ник',

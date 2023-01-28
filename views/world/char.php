@@ -6,17 +6,17 @@ use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
 
-$this->title = 'Жители мир Fenrir - Ragnarok Online Server';
+$this->title = 'Жители мира Fenrir - Ragnarok Online Server';
 $this->registerMetaTag([
     'name' => 'keywords',
     'content' => 'Ragnarok Online, Fenrir, RoFenrir, сервер, бесплатная игра'
 ]);
 $this->registerMetaTag([
     'name' => 'description',
-    'content' => 'Бесплатный игровой сервер Ragnarok Online. Нет абонентская платы и внутренних покупок. Игра без ограничений. Без вайпов с открытия в 2011 году.'
+    'content' => 'Бесплатный игровой сервер Ragnarok Online. Нет абонентской платы и внутренних покупок. Игра без ограничений. Без вайпов с открытия в 2011 году.'
 ]);
 $this->params['breadcrumbs'][] = ['label' => 'Мир Fenrir', 'url' => ['index']];
-$this->params['breadcrumbs'][] = 'Жители мир Fenrir';
+$this->params['breadcrumbs'][] = 'Жители мира Fenrir';
 ?>
 
 
@@ -56,7 +56,7 @@ $this->params['breadcrumbs'][] = 'Жители мир Fenrir';
             'dataProvider' => $dataProvider,
             //'filterModel' => $searchModel,
             'columns' => [
-        //        'char_id',
+                
         //        'account_id',
         //'name',
                 'title',
@@ -65,6 +65,7 @@ $this->params['breadcrumbs'][] = 'Жители мир Fenrir';
                 'job_level',
         //'guild_id',
                 'last_map',
+                'char_id',
         //'last_x',
         //'last_y',
         //        'online',

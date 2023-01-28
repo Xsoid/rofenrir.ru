@@ -25,7 +25,7 @@ $this->params['breadcrumbs'][] = 'Создание аккаунты';
 
         <? if (empty($user->newGameEmails)): ?>
             <div class="alert alert-danger">
-                Отсутствуют подвержденные email, для которыех не создан игровой аккаунт.<br>
+                Отсутствуют подвержденные email, для которых не создан игровой аккаунт.<br>
                 <a href="<?= Yii::$app->params['profileUrl'] ?>" class="alert-link" target="_blank">Добавить E-mail</a>
             </div>
         <? else: ?>
