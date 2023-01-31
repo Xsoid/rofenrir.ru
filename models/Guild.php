@@ -90,7 +90,6 @@ class Guild extends \yii\db\ActiveRecord
        public function convertEncoding($string)
     {
         $result = $string;
-        $result = mb_convert_encoding($result, 'cp1252', 'utf-8');
         $result = mb_convert_encoding($result, 'utf-8', 'cp1251');
         return $result;
     }

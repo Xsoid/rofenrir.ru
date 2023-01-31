@@ -58,7 +58,7 @@ $this->params['breadcrumbs'][] = 'Жители мира Fenrir';
             'columns' => [
                 
         //        'account_id',
-        //'name',
+                //'name',
                 'title',
                 'className',
                 'base_level',
