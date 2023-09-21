@@ -3,7 +3,7 @@
 $this->title = 'Охота на странную гидру';
 $this->registerMetaTag([
      'name' => 'keywords',
-     'content' => 'Ragnarok Online, Renewal, Fenrir, RoFenrir, сервер, бесплатная игра'
+     'content' => 'MMORPG, Renewal, Fenrir, RoFenrir, сервер, бесплатная игра'
 ]);
 $this->registerMetaTag([
      'name' => 'description',

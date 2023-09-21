@@ -5,7 +5,7 @@
 $this->title = 'Продавец родины';
 $this->registerMetaTag([
      'name' => 'keywords',
-     'content' => 'Продавец родины, Ragnarok Online, Renewal, Fenrir, RoFenrir, сервер, бесплатная игра'
+     'content' => 'Продавец родины, MMORPG, Renewal, Fenrir, RoFenrir, сервер, бесплатная игра'
 ]);
 $this->registerMetaTag([
      'name' => 'description',

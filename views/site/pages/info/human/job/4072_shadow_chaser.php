@@ -2,10 +2,10 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'Shadow Chaser | Ragnarok Online';
+$this->title = 'Shadow Chaser';
 $this->registerMetaTag([
      'name' => 'keywords',
-     'content' => 'Shadow Chaser, Ragnarok Online, Renewal, Fenrir, RoFenrir, квест на профессию'
+     'content' => 'Shadow Chaser, MMORPG, Renewal, Fenrir, RoFenrir, квест на профессию'
 ]);
 $this->registerMetaTag([
      'name' => 'description',

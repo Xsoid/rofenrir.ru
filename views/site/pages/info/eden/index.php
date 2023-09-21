@@ -3,7 +3,7 @@
 $this->title = 'Компания Эдем [Eden Group]';
 $this->registerMetaTag([
      'name' => 'keywords',
-     'content' => 'Eden Group, квесты, Ragnarok Online, Renewal, Fenrir, RoFenrir'
+     'content' => 'Eden Group, квесты, MMORPG, Renewal, Fenrir, RoFenrir'
 ]);
 $this->registerMetaTag([
      'name' => 'description',

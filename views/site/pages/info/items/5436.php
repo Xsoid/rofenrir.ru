@@ -9,7 +9,7 @@ $this->registerMetaTag([
 ]);
 $this->registerMetaTag([
      'name' => 'description',
-     'content' => 'Гайд по получению красивого свадебного венка в Ragnarok Online.'
+     'content' => 'Гайд по получению красивого свадебного венка.'
 ]);
 $this->params['breadcrumbs'][] = ['label' => 'Путиводитель', 'url' => ['info/index']];
 $this->params['breadcrumbs'][] = ['label' => 'Квестовые предметы', 'url' => ['info/items/index']];

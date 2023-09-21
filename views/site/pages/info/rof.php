@@ -2,31 +2,31 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'Что такое «Ragnarok Online Fenrir»';
+$this->title = 'Что такое RoFenrir»';
 $this->registerMetaTag([
      'name' => 'keywords',
-     'content' => 'Ragnarok Online, Renewal, Fenrir, RoFenrir, сервер, бесплатная игра'
+     'content' => 'MMORPG, Renewal, Fenrir, RoFenrir, сервер, бесплатная игра'
 ]);
 $this->registerMetaTag([
      'name' => 'description',
-     'content' => 'Что такое «Ragnarok Online Fenrir»'
+     'content' => 'Что такое RoFenrir»'
 ]);
 $this->params['breadcrumbs'][] = ['label' => 'Путиводитель', 'url' => ['info/index']];
-$this->params['breadcrumbs'][] = 'Что такое «Рагнарок Онлайн»';
+$this->params['breadcrumbs'][] = 'Что такое RoFenrir';
 ?>
 
 <div class="row">
     <div class="col">
-        <h1>Что такое «Ragnarok Online Fenrir»</h1>
+        <h1>Что такое RoFenrir</h1>
         <table class="table table-striped" style="font-size:1.3rem;">
           <tbody>
-            <tr>
+            <?/* <tr>
               <td><img src="/img/content/info/novice/g_about_01.gif" style="padding-top:1.5rem;"></td>
               <td>
                 <h4>Что Такое Рагнарок?</h4>Рагнарок  -  онлайновая ролевая игра, созданная на основе скандинавской мифологии по мотивам комиксов «Рагнарок» южнокорейского писателя Lee Myon-Jin'а. 
                 Пользователи могут создавать персонажей и пускаться поодиночке или группами в странствия по огромному интересному миру в поисках приключений.
               </td>
-            </tr>
+            </tr> */?>
             <tr>
               <td><img src="/img/content/info/novice/g_about_02.gif" style="padding-top:1.5rem;"></td>
               <td>

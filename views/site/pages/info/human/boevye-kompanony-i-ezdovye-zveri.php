@@ -5,7 +5,7 @@
 $this->title = 'Боевые компаньоны и ездовые звери';
 $this->registerMetaTag([
      'name' => 'keywords',
-     'content' => 'Ragnarok Online, Renewal, Fenrir, RoFenrir, сервер, бесплатная игра'
+     'content' => 'MMORPG, Renewal, Fenrir, RoFenrir, сервер, бесплатная игра'
 ]);
 $this->registerMetaTag([
      'name' => 'description',

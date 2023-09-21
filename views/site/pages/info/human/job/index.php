@@ -2,14 +2,14 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'Профессии Рагнарок Онлай';
+$this->title = 'Профессии RoFenrir';
 $this->registerMetaTag([
      'name' => 'keywords',
-     'content' => 'Профессии Рагнарок Онлай, Rise Corp, Ragnarok Online, Renewal, Fenrir, RoFenrir, сервер, бесплатная игра'
+     'content' => 'Профессии RoFenrir, Rise Corp, MMORPG, Renewal, Fenrir, RoFenrir, сервер, бесплатная игра'
 ]);
 $this->registerMetaTag([
      'name' => 'description',
-     'content' => 'Все профессии Ragnarok Online'
+     'content' => 'Все профессии RoFenrir'
 ]);
 $this->params['breadcrumbs'][] = ['label' => 'Путиводитель', 'url' => ['info/index']];
 $this->params['breadcrumbs'][] = 'Люди';

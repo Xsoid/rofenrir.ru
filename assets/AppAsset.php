@@ -24,8 +24,12 @@ class AppAsset extends AssetBundle
     ];
     public $depends = [
         'yii\web\YiiAsset',
-        'share\web\Bootstrap4Asset',
+        'yii\jui\JuiAsset',
+        'yii\bootstrap5\BootstrapAsset',
+        'yii\bootstrap5\BootstrapPluginAsset',
+        'share\web\MasonryAsset',
         'share\web\FontAwesome5Asset',
+        'share\web\MomentJsAsset',
         'share\web\RpgidPlatform',
     ];
 }

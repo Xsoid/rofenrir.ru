@@ -2,16 +2,16 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'Мир Fenrir - Ragnarok Online Server';
+$this->title = 'Мир RoFenrir';
 $this->registerMetaTag([
     'name' => 'keywords',
-    'content' => 'Ragnarok Online, Renewal, Fenrir, RoFenrir, сервер, бесплатная игра'
+    'content' => 'MMORPG, Renewal, Fenrir, RoFenrir, сервер, бесплатная игра'
 ]);
 $this->registerMetaTag([
     'name' => 'description',
-    'content' => 'RoFenrir - бесплатный игровой сервер Ragnarok Online. Нет абонентская платы и внутренних покупок. Игра без ограничений. Без вайпов с открытия в 2011 году.'
+    'content' => 'RoFenrir - бесплатный игровой сервер MMORPG. Нет абонентская платы и внутренних покупок. Игра без ограничений. Без вайпов с открытия в 2011 году.'
 ]);
-$this->params['breadcrumbs'][] = 'Мир Fenrir';
+$this->params['breadcrumbs'][] = 'Мир RoFenrir';
 ?>
 
 

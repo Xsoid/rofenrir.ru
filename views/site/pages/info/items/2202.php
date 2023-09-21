@@ -9,7 +9,7 @@ $this->registerMetaTag([
 ]);
 $this->registerMetaTag([
      'name' => 'description',
-     'content' => 'Гайд по получению Тёмных очков со слоотм, для игры Ragnarok Online.'
+     'content' => 'Гайд по получению Тёмных очков со слотм.'
 ]);
 $this->params['breadcrumbs'][] = ['label' => 'Путиводитель', 'url' => ['info/index']];
 $this->params['breadcrumbs'][] = ['label' => 'Квестовые предметы', 'url' => ['info/items/index']];

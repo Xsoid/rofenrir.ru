@@ -5,7 +5,7 @@
 $this->title = 'Квесты для получения предметов';
 $this->registerMetaTag([
      'name' => 'keywords',
-     'content' => 'Квестовые предметы, items, Ragnarok Online, Renewal, Fenrir, RoFenrir, сервер, бесплатная игра'
+     'content' => 'Квестовые предметы, items, MMORPG, Renewal, Fenrir, RoFenrir, сервер, бесплатная игра'
 ]);
 $this->registerMetaTag([
      'name' => 'description',

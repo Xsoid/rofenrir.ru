@@ -5,7 +5,7 @@
 $this->title = 'Профсоюз Корпорация Райс';
 $this->registerMetaTag([
      'name' => 'keywords',
-     'content' => 'Профсоюз, Корпорация Райс, Rise Corp, Ragnarok Online, Renewal, Fenrir, RoFenrir, сервер, бесплатная игра'
+     'content' => 'Профсоюз, Корпорация Райс, Rise Corp, MMORPG, Renewal, Fenrir, RoFenrir, сервер, бесплатная игра'
 ]);
 $this->registerMetaTag([
      'name' => 'description',

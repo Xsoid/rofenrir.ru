@@ -3,7 +3,7 @@
 $this->title = 'Квест на вход в подземелье Бразилиса';
 $this->registerMetaTag([
      'name' => 'keywords',
-     'content' => 'Ragnarok Online, Renewal, Fenrir, RoFenrir, сервер, бесплатная игра'
+     'content' => 'MMORPG, Renewal, Fenrir, RoFenrir, сервер, бесплатная игра'
 ]);
 $this->registerMetaTag([
      'name' => 'description',

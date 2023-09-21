@@ -5,7 +5,7 @@
 $this->title = 'Наставник';
 $this->registerMetaTag([
      'name' => 'keywords',
-     'content' => 'Наставник, Ragnarok Online, Renewal, Fenrir, RoFenrir, сервер'
+     'content' => 'Наставник, MMORPG, Renewal, Fenrir, RoFenrir, сервер'
 ]);
 $this->registerMetaTag([
      'name' => 'description',

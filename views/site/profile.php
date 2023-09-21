@@ -5,14 +5,14 @@ use yii\helpers\Url;
 /* @var $this yii\web\View */
 /* @var $model app\models\User */
 
-$this->title = 'Мой профиль | RoFenrir - Ragnarok Online';
+$this->title = 'Мой профиль | RoFenrir';
 $this->registerMetaTag([
     'name' => 'keywords',
-    'content' => 'Ragnarok Online, Renewal, Fenrir, RoFenrir, сервер, бесплатная игра'
+    'content' => 'MMORPG, Renewal, Fenrir, RoFenrir, сервер, бесплатная игра'
 ]);
 $this->registerMetaTag([
     'name' => 'description',
-    'content' => 'RoFenrir -  русский экспериментальный сервер Ragnarok Online. Бесплатный: без абонентской платы и внутренних платежей.'
+    'content' => 'RoFenrir -  русский экспериментальный сервер MMORPG. Бесплатный: без абонентской платы и внутренних платежей.'
 ]);
 ?>
 <div class="site-index">

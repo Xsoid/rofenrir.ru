@@ -2,14 +2,14 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'Про RoFenrir - Ragnarok Online Server';
+$this->title = 'Про RoFenrir';
 $this->registerMetaTag([
      'name' => 'keywords',
-     'content' => 'Ragnarok Online, Renewal, Fenrir, RoFenrir, сервер, бесплатная игра'
+     'content' => 'MMORPG, Renewal, Fenrir, RoFenrir, сервер, бесплатная игра'
 ]);
 $this->registerMetaTag([
      'name' => 'description',
-     'content' => 'Бесплатный игровой сервер Ragnarok Online. Нет абонентская платы и внутренних покупок. Игра без ограничений. Без вайпов с открытия в 2011 году.'
+     'content' => 'Бесплатный игровой сервер MMORPG. Нет абонентская платы и внутренних покупок. Игра без ограничений. Без вайпов с открытия в 2011 году.'
 ]);
 $this->params['breadcrumbs'][] = 'О проекте';
 ?>
@@ -33,7 +33,7 @@ $this->params['breadcrumbs'][] = 'О проекте';
                 <h1>Помощь проекту</h1>
                 <p>Ядром сервера является <a href="https://github.com/rathena/rathena" target="_metrics">rAthena</a>, принимайте активное участие в жизни сообщества, предлагайте обновления и улучшения и они вскоре попадут на сервер.</p>
                 <p><a href="https://github.com/Xsoid/rAthena-in-Russian" target="_metrics">Перевод rAthena на Русский язык</a>. Переводите скрипты и добавляйте их в репозиторий.</p>
-                <p><a href="https://github.com/Xsoid/ROrussianRE" target="_metrics">Перевод клиента Ragnarok Online на Русский язык</a>. Переводите файлы и добавляйте их в репозиторий.</p>
+                <p><a href="https://github.com/Xsoid/ROrussianRE" target="_metrics">Перевод клиента на Русский язык</a>. Переводите файлы и добавляйте их в репозиторий.</p>
                 <p>У проекта отсутствует лаунчер. Если кто-то возьмёт на себя его разработку и поддержку, пишите на fenrir@rofenrir.ru</p>
                 <p>Публичная часть сайта rofenrir.ru доступна для совместного редактирования и расширения на <a href="https://github.com/Xsoid/rofenrir.ru" target="_metrics">GitHub</a>.</p>
                 <div class="alert alert-success col-12" role="alert">

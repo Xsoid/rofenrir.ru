@@ -3,11 +3,11 @@
 $this->title = 'Компания Эдем - Задания на получение снаряжения';
 $this->registerMetaTag([
      'name' => 'keywords',
-     'content' => 'Eden Group, Ragnarok Online, Renewal, квесты'
+     'content' => 'Eden Group, MMORPG, Renewal, квесты'
 ]);
 $this->registerMetaTag([
      'name' => 'description',
-     'content' => 'Инсттрукция по получению снаряжения в Эдеме, для игры Ragnarok Online.'
+     'content' => 'Инструкция по получению снаряжения в Эдеме, для игры RoFenrir.'
 ]);
 $this->params['breadcrumbs'][] = ['label' => 'Путиводитель', 'url' => ['info/index']];
 $this->params['breadcrumbs'][] = ['label' => 'Компания Эдем', 'url' => ['info/eden/index']];

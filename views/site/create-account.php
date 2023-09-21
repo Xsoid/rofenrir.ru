@@ -7,14 +7,14 @@ use yii\helpers\Html;
 /* @var $model app\models\GameAccount */
 /* @var $user app\models\User */
 
-$this->title = 'Создание аккаунты | RoFenrir - Ragnarok Online';
+$this->title = 'Создание аккаунты | RoFenrir';
 $this->registerMetaTag([
     'name' => 'keywords',
-    'content' => 'Ragnarok Online, Renewal, Fenrir, RoFenrir, сервер, бесплатная игра'
+    'content' => 'MMORPG, Renewal, Fenrir, RoFenrir, сервер, бесплатная игра'
 ]);
 $this->registerMetaTag([
     'name' => 'description',
-    'content' => 'RoFenrir -  русский экспериментальный сервер Ragnarok Online. Бесплатный: без абонентской платы и внутренних платежей.'
+    'content' => 'RoFenrir -  русский экспериментальный сервер MMORPG. Бесплатный: без абонентской платы и внутренних платежей.'
 ]);
 $this->params['breadcrumbs'][] = ['label' => 'Профиль', 'url' => ['/profile']];
 $this->params['breadcrumbs'][] = 'Создание аккаунты';

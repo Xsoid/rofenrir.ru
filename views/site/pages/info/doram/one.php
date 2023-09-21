@@ -9,7 +9,7 @@ $this->registerMetaTag([
 ]);
 $this->registerMetaTag([
      'name' => 'description',
-     'content' => 'Начать игру за самую милую расу Ragnarok Online'
+     'content' => 'Начать игру за самую милую расу RoFenrir'
 ]);
 $this->params['breadcrumbs'][] = ['label' => 'Путиводитель', 'url' => ['info/index']];
 $this->params['breadcrumbs'][] = 'Doram';

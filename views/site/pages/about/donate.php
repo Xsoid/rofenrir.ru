@@ -2,10 +2,10 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'Поддержка проекта - RO Fenrir';
+$this->title = 'Поддержка проекта - RoFenrir';
 $this->registerMetaTag([
      'name' => 'keywords',
-     'content' => 'Ragnarok Online, Renewal, Fenrir, RoFenrir, сервер, бесплатная игра'
+     'content' => 'MMORPG, Renewal, Fenrir, RoFenrir, сервер, бесплатная игра'
 ]);
 $this->registerMetaTag([
      'name' => 'description',

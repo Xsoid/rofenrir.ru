@@ -2,19 +2,19 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'RoFenrir - Ragnarok Online Server';
+$this->title = 'RoFenrir - MMORPG Server';
 $this->registerMetaTag([
     'name' => 'keywords',
-    'content' => 'Ragnarok Online, Renewal, Fenrir, RoFenrir, сервер, бесплатная игра'
+    'content' => 'MMORPG, Renewal, Fenrir, RoFenrir, сервер, бесплатная игра'
 ]);
 $this->registerMetaTag([
     'name' => 'description',
-    'content' => 'RoFenrir -  русский экспериментальный сервер Ragnarok Online. Бесплатный: без абонентской платы и внутренних платежей.'
+    'content' => 'RoFenrir -  русский экспериментальный сервер MMORPG. Бесплатный: без абонентской платы и внутренних платежей.'
 ]);
 ?>
 <div class="jumbotron col-12 p-5" style="background-image:url(img/character-summoner.jpg);background-position:center;">
     <h1 class="mt-0">RoFenrir</h1>
-    <p class="lead">Ragnarok Online Server</p>
+    <p class="lead"></p>
     <p><a class="btn btn-success btn-lg" style="font-size: 32px;" href="<?= $authUrl ?>">ВХОД</a><p>
     <p><a href="<?= $authVkontakteUrl ?>" class="btn btn-success" title="Авторизация через VK"><i class="fab fa-vk" aria-hidden="true"></i></a> 
         <a href="<?= $authYandex_oauthUrl ?>" class="btn btn-success" title="Авторизация через Яндекс"><i class="fab fa-yandex" aria-hidden="true"></i></a> 
@@ -33,7 +33,7 @@ $this->registerMetaTag([
         </div>
         <div class="col">
             <h2>Скачать клиент</h2>
-            <p>Скачай полный игровой клиент Ragnarok Online. Разархивируй куда хочешь и запусти Fenrir.exe</p>
+            <p>Скачай полный игровой клиент MMORPG. Разархивируй куда хочешь и запусти Fenrir.exe</p>
             <p><a class="btn btn-default" href="/client">Скачать клиент</a></p>
         </div>
         <div class="col">

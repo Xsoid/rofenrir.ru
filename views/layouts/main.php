@@ -27,26 +27,21 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
 
 <div class="wrap">
-
-<nav class="navbar navbar-fixed-top navbar-expand-lg navbar-default bg-light">
-    <div class="container">
-        <a class="navbar-brand" href="/">RoFenrir | Ragnarok Online</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item"><a class="nav-link" href="/client">Клиент</a></li>
-      <li class="nav-item"><a class="nav-link" href="/info/">Информация</a></li>
-      <li class="nav-item"><a class="nav-link" href="/blog/">Статьи</a></li>
-      <li class="nav-item"><a class="nav-link" href="/world/char">Жители</a></li>
-      <li class="nav-item"><a class="nav-link" href="/world/guild">Гильдии</a></li>
-      <li class="nav-item"><a class="nav-link" href="/about/">О проекте</a></li>
-    </ul>
-  </div>
-</div>
-</nav>
-
+    <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-default bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="/">RoFenrir | MMORPG</a>
+            <div id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item"><a class="nav-link" href="/client">Клиент</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/info/">Информация</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/blog/">Статьи</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/world/char">Жители</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/world/guild">Гильдии</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/about/">О проекте</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="container">
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
@@ -78,8 +73,7 @@ AppAsset::register($this);
             <? endif; ?>
         </p>
 
-        <p class="pull-right">&copy; Project Fenrir 2011-<?= date('Y') ?> [18+]<br>
-        &copy; 2002-<?= date('Y') ?> Gravity Co., Ltd.</p>
+        <p class="pull-right">&copy; Project Fenrir 2011-<?= date('Y') ?> [18+]</p>
         <p class="pull-right"></p>
     </div>
 </footer>

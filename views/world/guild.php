@@ -6,14 +6,14 @@ use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
 
-$this->title = 'Гильдии мира Fenrir - Ragnarok Online Server';
+$this->title = 'Гильдии мира RoFenrir';
 $this->registerMetaTag([
     'name' => 'keywords',
-    'content' => 'Ragnarok Online, Fenrir, RoFenrir, сервер, бесплатная игра'
+    'content' => 'MMORPG, Fenrir, RoFenrir, сервер, бесплатная игра'
 ]);
 $this->registerMetaTag([
     'name' => 'description',
-    'content' => 'Бесплатный игровой сервер Ragnarok Online. Нет абонентская платы и внутренних покупок. Игра без ограничений. Без вайпов с открытия в 2011 году.'
+    'content' => 'Бесплатный игровой сервер MMORPG. Нет абонентская платы и внутренних покупок. Игра без ограничений. Без вайпов с открытия в 2011 году.'
 ]);
 $this->params['breadcrumbs'][] = ['label' => 'Мир Fenrir', 'url' => ['index']];
 $this->params['breadcrumbs'][] = 'Гильдии мира Fenrir';
