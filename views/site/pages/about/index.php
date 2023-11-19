@@ -53,18 +53,5 @@ $this->params['breadcrumbs'][] = 'О проекте';
         <strong>Рейты дропа обычного лута:&nbsp;</strong>Общий 10x / Исцеляющий&nbsp; 10x&nbsp;/ Полезный 10x / Предметы 10x / Карты 10x<br />
         <strong>Рейты дропа с боcса:</strong>&nbsp;Общий 10x / Исцеляющий 10x / Полезный 10x / Предметы 10x / Карты 10x<br />
         <strong>Прочий:</strong>&nbsp;MvP 10x / На основе карт 10x / Сокровища 10x</p>
-        <h3 id="lvl">Максимальный уровень</h3>
-        <p>Третьи профы: 175/70</p>
-        <h3 id="job">Введены профессии</h3>
-        <ul>
-            <li>Super Novice / Expanded Super Novice / Baby</li>
-            <li>Advance Job</li>
-            <li>3 Job</li>
-            <li>Taekwon / Taekwon Master / Soul Linker</li>
-            <li>Ninja / Kagerou (Oboro)</li>
-            <li>Gunslinger / Rebellion</li>
-            <li>Doram (Summoner)</li>
-            <li>Класcические и jRo спрайты третих профессий</li>
-        </ul>
     </div>
 </div>
