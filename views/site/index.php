@@ -16,7 +16,7 @@ $this->registerMetaTag([
     <h1 class="mt-0">RoFenrir</h1>
     <p class="lead"></p>
     <p><a class="btn btn-success btn-lg" style="font-size: 32px;" href="<?= $authUrl ?>">ВХОД</a><p>
-    <p><a href="<?= $authVkontakteUrl ?>" class="btn btn-success" title="Авторизация через VK"><i class="fab fa-vk" aria-hidden="true"></i></a> 
+    <p><a href="<?= $authVkId ?>" class="btn btn-success" title="Авторизация через VK ID"><i class="fab fa-vk" aria-hidden="true"></i></a> 
         <a href="<?= $authYandex_oauthUrl ?>" class="btn btn-success" title="Авторизация через Яндекс"><i class="fab fa-yandex" aria-hidden="true"></i></a> 
         <a href="<?= $authGoogle_oauthUrl ?>" class="btn btn-success" title="Авторизация через Google"><i class="fab fa-google" aria-hidden="true"></i></a></p>
     <p><small>У нас есть котики</small></p>
