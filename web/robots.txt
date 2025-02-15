@@ -1,4 +1,0 @@
-User-agent: *
-Allow: *
-Sitemap: http://rofenrir.ru/sitemap.xml
-Host: rofenrir.ru

@@ -31,5 +31,6 @@ class AppAsset extends AssetBundle
         'share\web\FontAwesome5Asset',
         'share\web\MomentJsAsset',
         'share\web\RpgidPlatform',
+        'share\web\ImagesloadedAsset',
     ];
 }

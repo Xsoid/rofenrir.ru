@@ -7,6 +7,13 @@ use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
+use app\models\LoginForm;
+use app\models\ContactForm;
+use app\models\PasswordResetRequestForm;
+use app\models\ResetPasswordForm;
+use app\models\SignupForm;
+use app\models\User;
+use yii\helpers\Markdown;
 
 class SiteController extends Controller
 {
@@ -18,10 +25,15 @@ class SiteController extends Controller
         return [
             'access' => [
                 'class' => AccessControl::className(),
-                'only' => ['logout', 'profile', 'account', 'create-account'],
+                'only' => ['logout', 'profile', 'account', 'create-account', 'confirm-email', 'send-confirm-email'],
                 'rules' => [
                     [
-                        'actions' => ['logout', 'profile', 'account', 'create-account'],
+                        'actions' => ['signup'],
+                        'allow' => true,
+                        'roles' => ['?'],
+                    ],
+                    [
+                        'actions' => ['logout', 'profile', 'account', 'create-account', 'confirm-email', 'send-confirm-email'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -56,13 +68,41 @@ class SiteController extends Controller
                 'class' => 'app\ext\MarkdownAction',
                 'viewPrefix' => 'markdown'
             ],
-            'index' => [
+            'login' => [
                 'class' => 'share\actions\LoginRpgidAction',
-                'redirectUrl' => ['profile'],
-                'viewFile' => 'index',
-                'useBackRedirectUrl' => false,
+                'redirectUrl' => ['index'],
             ],
         ];
+    }
+
+    /**
+     * Displays homepage.
+     *
+     * @return mixed
+     */
+    public function actionIndex()
+    {
+        $userId = Yii::$app->user->id;
+        $eventRatings = [];
+        if ($userId) {
+            $eventRatings = CalendarEventRating::findAll([
+                'id_user' => $userId,
+            ]);
+        }
+        return $this->render('index', [
+            'eventRatings' => $eventRatings,
+        ]);
+    }
+
+    private function setLoginGoBackData($returnUrl) {
+        if ($returnUrl) {
+            Yii::$app->session->set('external_return_url', $returnUrl);
+        }
+    }
+
+    private function getLoginGoBackData() {
+        $returnUrl = Yii::$app->session->get('external_return_url');
+        return [$returnUrl];
     }
 
     /**
@@ -72,9 +112,13 @@ class SiteController extends Controller
      */
     public function actionLogout()
     {
+        list($returnUrl) = $this->getLoginGoBackData();
+
         Yii::$app->user->logout();
 
-        return $this->goHome();
+        $this->setLoginGoBackData($returnUrl);
+
+        return $this->redirect(['login']);
     }
 
     /**
@@ -90,8 +134,15 @@ class SiteController extends Controller
     public function actionProfile()
     {
         $user = Yii::$app->user->identity;
+        $user->scenario = User::SCENARIO_PROFILE;
+        if ($user->load(Yii::$app->request->post()) && $user->save()) {
+
+        }
+        $emailContacts = $user->getContacts()->andWhere(['type' => UserContact::TYPE_EMAIL])->all();
+
         return $this->render('profile', [
             'model' => $user,
+            'emailContacts' => $emailContacts,
         ]);
     }
 

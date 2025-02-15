@@ -6,6 +6,7 @@
 use yii\helpers\Html;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
+use share\modules\community\models\SiteSettings;
 
 AppAsset::register($this);
 ?>
@@ -18,43 +19,63 @@ AppAsset::register($this);
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
-    <meta name="yandex-verification" content="e047231694d9491d" />
+    <?/* Фавиконы */?>
+    <? $FaviconXIcon = SiteSettings::currentItem('FaviconXIcon'); ?>
+    <? if (!empty($FaviconXIcon)): ?>
+      <link rel="icon" href="<?= $FaviconXIcon->file_url ?>" type="image/x-icon">
+    <? endif; ?>
+    <? $FaviconSvg = SiteSettings::currentItem('FaviconSvg'); ?>
+    <? if (!empty($FaviconSvg)): ?>
+      <link rel="icon" href="<?= $FaviconSvg->file_url ?>" type="image/svg+xml">
+    <? endif; ?>
+    <? $FaviconApple180 = SiteSettings::currentItem('FaviconApple180'); ?>
+    <? if (!empty($FaviconApple180)): ?>
+      <link rel="apple-touch-icon" href="<?= $FaviconApple180->file_url ?>" sizes="180x180">
+    <? endif; ?>
+    <?/* Фавиконы конец */?>
+    <?/* Яндекс верификация */?>
+    <? $yandexVerification = SiteSettings::currentValue('YandexVerification'); ?>
+    <? if (!empty($yandexVerification)): ?>
+      <meta name="yandex-verification" content="<?= $yandexVerification ?>" />
+    <? endif; ?>
+    <?/* Яндекс верификация конец */?>
 </head>
-<body>
+<body class="container">
 
-<?= $this->render('_metrics') ?>
+<?/* Яндекс Метрика */?>
+<? $YandexMetrika = \share\modules\community\models\SiteSettings::currentValue('YandexMetrika'); ?>
+<? if (!empty($YandexMetrika)): ?>
+<?= $YandexMetrika ?>
+<? endif; ?>
+<?/* Яндекс Метрика конец */?>
 
 <?php $this->beginBody() ?>
 
-<div class="wrap">
-    <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-default bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="/">RoFenrir | MMORPG</a>
-            <div id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item"><a class="nav-link" href="/client">Клиент</a></li>
-                  <li class="nav-item"><a class="nav-link" href="/info/">Информация</a></li>
-                  <li class="nav-item"><a class="nav-link" href="/blog/">Статьи</a></li>
-                  <li class="nav-item"><a class="nav-link" href="/world/char">Жители</a></li>
-                  <li class="nav-item"><a class="nav-link" href="/world/guild">Гильдии</a></li>
-                  <li class="nav-item"><a class="nav-link" href="/about/">О проекте</a></li>
-                </ul>
-            </div>
+
+<div class="alert alert-dark col-12 mt-3" role="alert">
+    <div class="row">
+        <div class="col-md-2 col-3">
+            <a href="/"><img src="/img/fenrir-ak.svg" class="img-fluid" alt="RoFenrir"></a>
         </div>
-    </nav>
-    <div class="container">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
-        <?= $content ?>
-
-    <? /* <div class="alert alert-danger mt-5" role="alert">
-      <b>Внимание!</b> Сервер переехал поэтому если вы не можете подключиться, установите крайний патч <b>RoFenrir-18.06.10</b>.<br>
-      <a href="/client" style="color: #fff;">Скачать её можно с любого удобного хранилища</a>.
-    </div> */ ?>
-
+        <div class="col">
+            <h1>RoFenrir | MMORPG</h1>
+            <p class="mb-1">Сейчас на сервере <b>0</b> человек. <a href="/world/char">Жители&nbsp;сервера</a>.</p>
+            <? if (Yii::$app->user->isGuest): ?>
+            <p><a href="/login" class="btn btn-outline-success">Авторизоваться на сайта</a></p>
+            <? else: ?>
+            <p><a href="/site/profile">Личный кабинет <?= Yii::$app->user->identity ?></a></p>
+            <? endif; ?>
+            <p></p>
+        </div>
     </div>
 </div>
+<div class="container">
+    <?= Breadcrumbs::widget([
+        'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+    ]) ?>
+</div>
+
+<?= $content ?>
 
 <footer class="footer mt-5">
     <div class="container">

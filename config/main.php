@@ -19,7 +19,7 @@ $config = [
         ],
         'authManager' => [
             'class' => 'yii\rbac\PhpManager',
-            'defaultRoles' => ['admin', 'moderator'],
+            'defaultRoles' => ['admin', 'moderator', 'user'],
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -70,20 +70,31 @@ $config = [
     ],
     'params' => $params,
     'modules' => [
+        'calendar' => [
+            'class' => 'share\modules\calendar\CalendarModule',
+        ],
+        'library' => [
+            'class' => 'share\modules\library\LibraryModule',
+        ],
+        'requisition' => [
+            'class' => 'share\modules\requisition\RequisitionModule',
+            'filterBySite' => true,
+        ],
         'share-file' => [
             'class' => 'share\modules\share_file\ShareFileModule',
             'baseDir' => dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'static.rpgid.ru',
             'baseUrl' => 'https://static.rpgid.ru',
         ],
+        'organization' => [
+            'class' => 'share\modules\organization\OrganizationModule',
+//            'viewPath' => '@app/views/organization',
+        ],
+        'project' => [
+            'class' => 'share\modules\project\ProjectModule',
+        ],
         'blog' => [
             'class' => 'share\modules\blog\BlogModule',
         ],
-//        'organization' => [
-//            'class' => 'share\modules\organization\OrganizationModule',
-//        ],
-//        'calendar' => [
-//            'class' => 'share\modules\calendar\CalendarModule',
-//        ],
     ],
 ];
 
