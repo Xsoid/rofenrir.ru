@@ -82,16 +82,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $userId = Yii::$app->user->id;
-        $eventRatings = [];
-        if ($userId) {
-            $eventRatings = CalendarEventRating::findAll([
-                'id_user' => $userId,
-            ]);
-        }
-        return $this->render('index', [
-            'eventRatings' => $eventRatings,
-        ]);
+        return $this->render('index');
     }
 
     private function setLoginGoBackData($returnUrl) {
