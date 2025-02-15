@@ -7,13 +7,6 @@ use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
-use app\models\LoginForm;
-use app\models\ContactForm;
-use app\models\PasswordResetRequestForm;
-use app\models\ResetPasswordForm;
-use app\models\SignupForm;
-use app\models\User;
-use yii\helpers\Markdown;
 
 class SiteController extends Controller
 {
@@ -25,15 +18,10 @@ class SiteController extends Controller
         return [
             'access' => [
                 'class' => AccessControl::className(),
-                'only' => ['logout', 'profile', 'account', 'create-account', 'confirm-email', 'send-confirm-email'],
+                'only' => ['logout', 'profile', 'account', 'create-account'],
                 'rules' => [
                     [
-                        'actions' => ['signup'],
-                        'allow' => true,
-                        'roles' => ['?'],
-                    ],
-                    [
-                        'actions' => ['logout', 'profile', 'account', 'create-account', 'confirm-email', 'send-confirm-email'],
+                        'actions' => ['logout', 'profile', 'account', 'create-account'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -72,28 +60,12 @@ class SiteController extends Controller
                 'class' => 'share\actions\LoginRpgidAction',
                 'redirectUrl' => ['index'],
             ],
+            'robots' => [
+                'class' => 'share\actions\SettingsValueAsFile',
+                'settingsCode' => 'SiteRobots',
+                'contentType' => 'text/plain',
+            ],
         ];
-    }
-
-    /**
-     * Displays homepage.
-     *
-     * @return mixed
-     */
-    public function actionIndex()
-    {
-        return $this->render('index');
-    }
-
-    private function setLoginGoBackData($returnUrl) {
-        if ($returnUrl) {
-            Yii::$app->session->set('external_return_url', $returnUrl);
-        }
-    }
-
-    private function getLoginGoBackData() {
-        $returnUrl = Yii::$app->session->get('external_return_url');
-        return [$returnUrl];
     }
 
     /**
@@ -101,15 +73,16 @@ class SiteController extends Controller
      *
      * @return mixed
      */
+    public function actionIndex()
+    {
+        return $this->render('index');
+    }
+    
     public function actionLogout()
     {
-        list($returnUrl) = $this->getLoginGoBackData();
-
         Yii::$app->user->logout();
 
-        $this->setLoginGoBackData($returnUrl);
-
-        return $this->redirect(['login']);
+        return $this->goHome();
     }
 
     /**
@@ -125,15 +98,8 @@ class SiteController extends Controller
     public function actionProfile()
     {
         $user = Yii::$app->user->identity;
-        $user->scenario = User::SCENARIO_PROFILE;
-        if ($user->load(Yii::$app->request->post()) && $user->save()) {
-
-        }
-        $emailContacts = $user->getContacts()->andWhere(['type' => UserContact::TYPE_EMAIL])->all();
-
         return $this->render('profile', [
             'model' => $user,
-            'emailContacts' => $emailContacts,
         ]);
     }
 
