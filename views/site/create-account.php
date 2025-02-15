@@ -16,16 +16,15 @@ $this->registerMetaTag([
     'name' => 'description',
     'content' => 'RoFenrir -  русский экспериментальный сервер MMORPG. Бесплатный: без абонентской платы и внутренних платежей.'
 ]);
-$this->params['breadcrumbs'][] = ['label' => 'Профиль', 'url' => ['/profile']];
+$this->params['breadcrumbs'][] = ['label' => 'Личный кабинет', 'url' => ['/site/profile']];
 $this->params['breadcrumbs'][] = 'Создание аккаунты';
 ?>
 <div class="site-index">
     <div class="body-content">
-        <h1>Создание аакаунта</h1>
-
+        <h1>Создание аккаунта RoFenrir</h1>
         <? if (empty($user->newGameEmails)): ?>
             <div class="alert alert-danger">
-                Отсутствуют подвержденные email, для которых не создан игровой аккаунт.<br>
+                Отсутствуют подвержденные email на аккаунте RPGID.<br>
                 <a href="<?= Yii::$app->params['profileUrl'] ?>" class="alert-link" target="_blank">Добавить E-mail</a>
             </div>
         <? else: ?>
@@ -43,13 +42,11 @@ $this->params['breadcrumbs'][] = 'Создание аккаунты';
             <?= $form->field($model, 'userid')->textInput() ?>
             <?= $form->field($model, 'sex')->radioList(\app\models\GameAccount::getSexList()) ?>
             <?= $form->field($model, 'user_pass')->textInput() ?>
-
             <div class="form-group">
                 <div class="col-md-offset-3 col-md-9 col-lg-offset-3 col-lg-9">
                     <?= Html::submitButton('Создать', ['class' => 'btn btn-primary', 'name' => 'signup-button']) ?>
                 </div>
             </div>
-
             <?php ActiveForm::end(); ?>
         <? endif; ?>
     </div>

@@ -33,7 +33,7 @@ $this->params['breadcrumbs'][] = 'Гильдии мира Fenrir';
             //'master',
             'masterName',
             'guild_lv',
-            'guild_id',
+            //'guild_id',
             ],
         ]); ?>
     </div>

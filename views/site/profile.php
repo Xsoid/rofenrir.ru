@@ -1,5 +1,6 @@
 <?php
 
+use yii\helpers\Html;
 use yii\helpers\Url;
 
 /* @var $this yii\web\View */
@@ -17,7 +18,14 @@ $this->registerMetaTag([
 ?>
 <div class="site-index">
     <div class="body-content">
-        <h1>Мой Профиль</h1>
+        <h2 style="float:left;">Аккаунт RPGID</h2>
+        <?= Html::beginForm(['/site/logout'], 'post', ['style'=>'float:right;'])
+                    . Html::submitButton(
+                        'Разлогиниться <i class="fas fa-sign-out-alt" aria-hidden="true"></i>',
+                        ['class' => 'btn btn-outline-secondary mb-2']
+                    )
+                    . Html::endForm();
+                ?>
         <table class="table table-bordered table-condensed table-striped">
             <tr>
                 <th>E-mail</th>
@@ -38,10 +46,10 @@ $this->registerMetaTag([
         <? endforeach; ?>
         </table>
         <p>
-            <a href="<?= Yii::$app->params['profileUrl'] ?>" class="btn btn-success" target="_blank">Редактировать E-mails</a>
+            <a href="<?= Yii::$app->params['profileUrl'] ?>" class="btn btn-outline-success mb-2" target="_blank">Управлять аккаунтом RPGID</a>
         </p>
 
-        <h2>Игровые аккуанты</h2>
+        <h2>Аккаунты RoFenrir</h2>
         <table class="table table-bordered table-condensed table-striped">
             <tr>
                 <th>Логин</th>
@@ -60,7 +68,7 @@ $this->registerMetaTag([
         </table>
 
         <p>
-            <a href="<?= Url::to(['/site/create-account']) ?>" class="btn btn-success">Создать аккуант</a>
+            <a href="<?= Url::to(['/site/create-account']) ?>" class="btn btn-outline-success">Создать игровой аккуант</a>
         </p>
     </div>
 </div>

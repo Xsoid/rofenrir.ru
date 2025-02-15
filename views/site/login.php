@@ -8,20 +8,19 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\widgets\ActiveForm;
 
-$this->title = 'Представится сайту';
+$this->title = 'Авторизоваться на сайте с помощью социальной сети';
 $this->registerMetaTag([
      'name' => 'keywords',
-     'content' => 'Представится сайту'
+     'content' => 'авторизация, социальные сети, RPG ID, VK ID, Яндекс, Google'
 ]);
 $this->registerMetaTag([
      'name' => 'description',
-     'content' => 'Представится сайту'
+     'content' => 'Авторизоваться на сайте с помощью социальной сети.'
 ]);
 ?>
 <div class="container-fluid">
-    <div class="jumbotron jumbotron-fluid mt-3">
+    <div class="jumbotron jumbotron-fluid mt-2">
         <div class="container text-center">
-            <h1><?= Html::encode($this->title) ?></h1><br>
             <p>Авторизуйтесь на сайте в один клик с помощью социальной сети или платформы в которой вы уже зарегистрированы.</p>
             <p>
             <?= Html::a('<i class="fa fa-id-card" aria-hidden="true"></i>', $authUrl, ['class' => 'btn btn-primary btn-lg', 'name' => 'login-button', 'title' => 'Войти через RPG ID']) ?>

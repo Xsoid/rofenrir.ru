@@ -4,7 +4,8 @@
 /* @var $content string */
 
 use yii\helpers\Html;
-use yii\widgets\Breadcrumbs;
+use yii\bootstrap\Nav;
+use yii\bootstrap\NavBar;
 use app\assets\AppAsset;
 use share\modules\community\models\SiteSettings;
 
@@ -58,8 +59,8 @@ AppAsset::register($this);
             <a href="/"><img src="/img/fenrir-ak.svg" class="img-fluid" alt="RoFenrir"></a>
         </div>
         <div class="col">
-            <h1>RoFenrir | MMORPG</h1>
-            <p class="mb-1">Сейчас на сервере <b>0</b> человек. <a href="/world/char">Жители&nbsp;сервера</a>.</p>
+            <h1 class="fs-2">RoFenrir | MMORPG</h1>
+            <p class="mb-1">Онлайн <b>N</b> человек</p>
             <? if (Yii::$app->user->isGuest): ?>
             <p><a href="/login" class="btn btn-outline-success">Авторизоваться на сайта</a></p>
             <? else: ?>
@@ -67,36 +68,19 @@ AppAsset::register($this);
             <? endif; ?>
             <p></p>
         </div>
+        <div class="col">
+            <p><a href="/client">Скачать&nbsp;клиент</a> | <a href="/blog/">Статьи</a> | <a href="/world/char">Жители&nbsp;сервера</a> | <a href="/world/guild">Гильдии</a></p>
+            <p><a href="https://discord.gg/uetZrN6Sus" target="_metrics">Сервер Discord</a></p>
+        </div>
     </div>
 </div>
-<div class="container">
-    <?= Breadcrumbs::widget([
-        'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-    ]) ?>
-</div>
 
+<?= $this->render('_breadcrumbs') ?>
 <?= $content ?>
 
-<footer class="footer mt-5">
-    <div class="container">
-        <p class="pull-left">
-            <a href="https://discord.gg/uetZrN6Sus" target="_metrics" class="btn btn-link">Discord</a>
-            <a href="/about/donate" class="btn btn-link">Поддержка</a>
-            <? if (!Yii::$app->user->isGuest): ?>
-                <a href="/profile" class="btn btn-link">Профиль</a>
-                <?= Html::beginForm(['/site/logout'], 'post', ['style'=>'float:left;'])
-                    . Html::submitButton(
-                        'Выйти',
-                        ['class' => 'btn btn-link']
-                    )
-                    . Html::endForm();
-                ?>
-            <? endif; ?>
-        </p>
-
-        <p class="pull-right">&copy; Project Fenrir 2011-<?= date('Y') ?> [18+]</p>
-        <p class="pull-right"></p>
-    </div>
+<footer class="footer">
+    <hr>
+    <p>Игровой сервер работает с 25.12.2011 без вайпов и продолжительных отключений. &copy; Project Fenrir 2011-<?= date('Y') ?> [18+].</p>
 </footer>
 
 <?php $this->endBody() ?>

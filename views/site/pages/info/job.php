@@ -12,7 +12,6 @@ $this->registerMetaTag([
      'content' => 'Все профессии RoFenrir'
 ]);
 $this->params['breadcrumbs'][] = ['label' => 'Путиводитель', 'url' => ['info/index']];
-$this->params['breadcrumbs'][] = 'Люди';
 $this->params['breadcrumbs'][] = 'Профессии';
 ?>
 

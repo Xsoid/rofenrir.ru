@@ -18,15 +18,8 @@ $this->params['breadcrumbs'][] = 'Путиводитель';
     <div class="col">
         <h1>Путиводитель</h1>
         <ul>
-          <li>Люди
-            <ul>
-              <li><a href="human/job/">Профессии</a></li>
-              <li><a href="human/boevye-kompanony-i-ezdovye-zveri">Боевые компаньоны и ездовые звери</a></li>
-            </ul>
-          </li>
           <li>Дорам [Doram]
             <ul>
-              <li><a href="doram/one">Первый контакт</a></li>
               <li>Summoner</li>
             </ul>
           </li>
@@ -50,20 +43,6 @@ $this->params['breadcrumbs'][] = 'Путиводитель';
           </li>
           <li><a href="items/">Квесты для получения предметов</a></li>
         </ul>
-    </div>
-    <div class="col">
-        <h1>Тех.поддержка</h1>
-        <ul>
-          <li><a href="rof">Что такое RoFenrir</a></li>
-          <li><a href="teh/reg">Система учёток RoFenrir</a></li>
-          <li>Управление и интерфейсы
-            <ul>
-              <li><a href="teh/nav">Навигационная система</a></li>
-              <li><a href="teh/komand">Консольные команды</a></li>
-            </ul>
-          </li>
-        </ul>
-    
     </div>
     <div class="col">
         <div class="bs-component">
