@@ -70,7 +70,12 @@ AppAsset::register($this);
         </div>
         <div class="col">
             <p><a href="/client">Скачать&nbsp;клиент</a> | <a href="/blog/">Статьи</a> | <a href="/world/char">Жители&nbsp;сервера</a> | <a href="/world/guild">Гильдии</a></p>
-            <p><a href="https://discord.gg/uetZrN6Sus" target="_metrics">Сервер Discord</a></p>
+            <p><a href="https://discord.gg/uetZrN6Sus" target="_metrics">Сервер Discord</a> 
+            <? if (Yii::$app->user->isGuest): ?>
+            <? else: ?>
+            | <a href="/about/donate">Поддержка проекта</a>
+            <? endif; ?>
+            </p>
         </div>
     </div>
 </div>
