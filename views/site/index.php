@@ -30,7 +30,12 @@ $this->registerMetaTag([
 <div>
     <h4 id="reit">Особенности конфигурации сервера</h3>
     <p>Рейты&nbsp;на&nbsp;опыт&nbsp;-&nbsp;15x.<br>Рейты&nbsp;на&nbsp;весь&nbsp;дроп&nbsp;-&nbsp;10x.<br>
-    <a href="https://rofenrir.ru/blog/post/view?id=1680">Расписание и особенности Войны Гильдий</a></p>
+</div>
+<div>
+    <h4 id="reit">Расписание ГВ</h3>
+    <p>Вторник и четверг: с 21:00 до 23:00.<br>Суббота: с 16:00 до 18:00.<br>
+    <h4 id="reit">Расписание ГВ 2.0</h3>
+    <p>Вторник и четверг: с 18:00 до 21:00.<br>Суббота: с 21:00 до 23:00.<br>
 </div>
 
 <? if (Yii::$app->user->isGuest): ?>
