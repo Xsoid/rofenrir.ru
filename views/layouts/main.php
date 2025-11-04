@@ -8,6 +8,11 @@ use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use app\assets\AppAsset;
 use share\modules\community\models\SiteSettings;
+use app\models\Char;
+
+$onlineCount = (int) Char::find()
+    ->where(['online' => 1])
+    ->count();
 
 AppAsset::register($this);
 ?>
@@ -60,7 +65,7 @@ AppAsset::register($this);
         </div>
         <div class="col">
             <h1 class="fs-2">RoFenrir | MMORPG</h1>
-            <p class="mb-1">Онлайн <b>N</b> человек</p>
+            <p class="mb-1">Сейчас онлайн: <b><?= $onlineCount ?></b></p>
             <? if (Yii::$app->user->isGuest): ?>
             <p><a href="/login" class="btn btn-outline-success">Авторизоваться на сайта</a></p>
             <? else: ?>
