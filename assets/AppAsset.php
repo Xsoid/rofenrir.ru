@@ -27,10 +27,10 @@ class AppAsset extends AssetBundle
         'yii\jui\JuiAsset',
         'yii\bootstrap5\BootstrapAsset',
         'yii\bootstrap5\BootstrapPluginAsset',
-        'share\web\MasonryAsset',
-        'share\web\FontAwesome5Asset',
-        'share\web\MomentJsAsset',
-        'share\web\RpgidPlatform',
-        'share\web\ImagesloadedAsset',
+        'share\web\MasonryAsset', // каскадные сетки, расширение Bootstrap
+        'share\web\FontAwesome5Asset', // иконки
+        'share\web\MomentJsAsset',  // работа с датами
+        'share\web\ImagesloadedAsset',  // отслеживание момента загрузки изображения
+        'share\web\RpgidPlatform',  // общие CSS и JS платформы (оформление)
     ];
 }
