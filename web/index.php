@@ -1,5 +1,7 @@
 <?php
 
+use share\components\OfflineApplicationRunner;
+
 // phpinfo();
 // die();
 // comment out the following two lines when deployed to production
@@ -21,4 +23,4 @@ $config = yii\helpers\ArrayHelper::merge(
     require(__DIR__ . '/../config/local/web.php')
 );
 // var_dump($config);
-(new yii\web\Application($config))->run();
+OfflineApplicationRunner::run($config);
