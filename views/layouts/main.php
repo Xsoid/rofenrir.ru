@@ -8,6 +8,7 @@ use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use app\assets\AppAsset;
 use share\modules\community\models\SiteSettings;
+use share\modules\community\models\AuthSettings;
 use app\models\Char;
 
 $onlineCount = (int) Char::find()
@@ -15,6 +16,8 @@ $onlineCount = (int) Char::find()
     ->count();
 
 AppAsset::register($this);
+$authSettings = AuthSettings::current();
+$authDisabled = $authSettings && $authSettings->disabled;
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -67,7 +70,9 @@ AppAsset::register($this);
             <h1 class="fs-2">RoFenrir | MMORPG</h1>
             <p class="mb-1">Сейчас онлайн: <b><?= $onlineCount ?></b></p>
             <? if (Yii::$app->user->isGuest): ?>
-            <p><a href="/login" class="btn btn-outline-success">Авторизоваться на сайта</a></p>
+              <? if (!$authDisabled): ?>
+              <p><a href="/login" class="btn btn-outline-success">Авторизоваться на сайта</a></p>
+              <? endif; ?>
             <? else: ?>
             <p><a href="/site/profile">Личный кабинет <?= Yii::$app->user->identity ?></a></p>
             <? endif; ?>

@@ -89,9 +89,6 @@ $config = [
             'class' => 'share\modules\organization\OrganizationModule',
 //            'viewPath' => '@app/views/organization',
         ],
-        'project' => [
-            'class' => 'share\modules\project\ProjectModule',
-        ],
         'blog' => [
             'class' => 'share\modules\blog\BlogModule',
         ],
