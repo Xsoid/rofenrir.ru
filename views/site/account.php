@@ -20,49 +20,109 @@ $this->params['breadcrumbs'][] = 'Управление профилем';
 ?>
 <div class="site-index">
     <div class="body-content">
-        <h1>Персонажи</h1>
-        <?php $form = ActiveForm::begin([
-            'id' => 'form-signup',
-            'options' => [
-                'class' => 'form-horizontal',
-            ],
-            'fieldConfig' => [
-                'template' => "{label}\n<div class=\"col-md-9 col-lg-9\">{input}</div>\n<div class=\"col-lg-12 text-right\">{error}</div>",
-                'labelOptions' => ['class' => 'col-md-3 col-lg-3 control-label'],
-            ],
-        ]); ?>
-        <?= $form->field($model, 'new_user_pass', [
-            'labelOptions' => [
-                'label' => 'Новый пароль',
-            ],
-        ])->textInput() ?>
-        <div class="form-group">
-            <div class="col-md-offset-3 col-md-9 col-lg-offset-3 col-lg-9">
-                <?= Html::submitButton('Сохранить', ['class' => 'btn btn-primary', 'name' => 'signup-button']) ?>
+        <div class="row">
+            <div class="col-lg-6 col-md-8">
+                <div class="card mb-4">
+                    <?php $form = ActiveForm::begin([
+                        'id' => 'form-signup',
+                        'fieldConfig' => [
+                            'options' => ['class' => 'row mb-3 align-items-center'],
+                            'template' => "{label}\n<div class=\"col-md-8 col-lg-9\">{input}{hint}{error}</div>",
+                            'labelOptions' => ['class' => 'col-md-4 col-lg-3 col-form-label text-md-end'],
+                            'hintOptions' => ['class' => 'form-text text-muted'],
+                            'errorOptions' => ['class' => 'invalid-feedback d-block'],
+                        ],
+                    ]); ?>
+                    <div class="card-header">
+                        <div class="fw-semibold">Смена пароля RoFenrir</div>
+                        <div class="text-muted small">Пароль используется для входа в игру. Задайте новый и сохраните изменения.</div>
+                    </div>
+                    <div class="card-body">
+                        <?= $form->field($model, 'new_user_pass', [
+                            'template' => "{label}\n<div class=\"col-md-8 col-lg-9\"><div class=\"input-group\">{input}<button class=\"btn btn-outline-secondary toggle-password\" type=\"button\" aria-label=\"Показать пароль\" data-target=\"#gameaccount-new_user_pass\">Показать</button><button type=\"submit\" class=\"btn btn-primary\" name=\"signup-button\">Сохранить</button></div>{hint}{error}</div>",
+                            'labelOptions' => [
+                                'label' => 'Новый пароль',
+                            ],
+                        ])->passwordInput([
+                            'placeholder' => 'Введите новый пароль',
+                            'autocomplete' => 'new-password',
+                            'maxlength' => true,
+                        ])->hint('Используйте не короче 8 символов и сочетайте буквы с цифрами.') ?>
+                    </div>
+                    <?php ActiveForm::end(); ?>
+                </div>
             </div>
         </div>
-        <?php ActiveForm::end(); ?>
-        <table class="table table-bordered table-condensed table-striped">
-            <tr>
-                <th>Имя персонажа</th>
-                <th>Пол</th>
-                <th>Профессия</th>
-                <th>Базовый уровень</th>
-                <th>Джоб уровень</th>
-                <th>Зен</th>
-                <th>Дата последнего входа</th>
-            </tr>
-            <? foreach ($model->chars as $char): ?>
+        <h2 class="h4 mt-4 mb-3">Персонажи</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped table-sm">
                 <tr>
-                    <td><?= $char->title ?></td>
-                    <td><?= $char->sex ?></td>
-                    <td><?= $char->className ?></td>
-                    <td><?= $char->base_level ?></td>
-                    <td><?= $char->job_level ?></td>
-                    <td><?= $char->zeny ?></td>
-                    <td><?= $char->last_login ?></td>
+                    <th>Имя персонажа</th>
+                    <th>Пол</th>
+                    <th>Профессия</th>
+                    <th>Базовый уровень</th>
+                    <th>Джоб уровень</th>
+                    <th>Зен</th>
+                    <th>Дата последнего входа</th>
+                    <th class="text-end">Действия</th>
                 </tr>
-            <? endforeach; ?>
-        </table>
+                <? foreach ($model->chars as $char): ?>
+                    <tr>
+                        <td><?= $char->title ?></td>
+                        <td><?= $char->sex ?></td>
+                        <td><?= $char->className ?></td>
+                        <td><?= $char->base_level ?></td>
+                        <td><?= $char->job_level ?></td>
+                        <td><?= $char->zeny ?></td>
+                        <td><?= $char->last_login ?></td>
+                        <td class="text-end">
+                            <button class="btn btn-outline-secondary btn-sm" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#char-<?= $char->char_id ?>-details"
+                                    aria-expanded="false"
+                                    aria-controls="char-<?= $char->char_id ?>-details">
+                                Подробнее
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="collapse bg-light" id="char-<?= $char->char_id ?>-details">
+                        <td colspan="8">
+                            <div class="row gy-2 align-items-center">
+                                <div class="col-md-6">
+                                    <div><strong>Текущее место:</strong> <?= $char->last_map ?> (<?= $char->last_x ?>, <?= $char->last_y ?>)</div>
+                                    <div class="text-muted small">Последний вход: <?= $char->last_login ?></div>
+                                </div>
+                                <div class="col-md-6 text-md-end">
+                                    <div><strong>Точка сохранения:</strong> <?= $char->save_map ?> (<?= $char->save_x ?>, <?= $char->save_y ?>)</div>
+                                    <div class="mt-2">
+                                        <?= Html::a('Перенести на точку сохранения', ['site/move-char', 'id' => $char->char_id], [
+                                            'class' => 'btn btn-warning btn-sm',
+                                            'data' => [
+                                                'method' => 'post',
+                                                'confirm' => 'Перенести персонажа на точку сохранения? Убедитесь, что он офлайн.',
+                                            ],
+                                        ]) ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                <? endforeach; ?>
+            </table>
+        </div>
     </div>
 </div>
+<?php
+$js = <<<JS
+jQuery(function ($) {
+    $('.toggle-password').on('click', function () {
+        var target = $($(this).data('target'));
+        var isHidden = target.attr('type') === 'password';
+        target.attr('type', isHidden ? 'text' : 'password');
+
+        $(this).text(isHidden ? 'Скрыть' : 'Показать');
+        $(this).attr('aria-label', isHidden ? 'Скрыть пароль' : 'Показать пароль');
+    });
+});
+JS;
+$this->registerJs($js);

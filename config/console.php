@@ -28,6 +28,9 @@ return [
                 ],
             ],
         ],
+        'telegram' => [
+            'class' => 'share\modules\telegram\components\Telegram',
+        ],
     ],
     'params' => $params,
 ];

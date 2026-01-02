@@ -3,10 +3,13 @@
 namespace app\controllers;
 
 use app\models\GameAccount;
+use app\models\Char;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
+use yii\web\ForbiddenHttpException;
+use yii\web\NotFoundHttpException;
 
 class SiteController extends Controller
 {
@@ -18,10 +21,10 @@ class SiteController extends Controller
         return [
             'access' => [
                 'class' => AccessControl::className(),
-                'only' => ['logout', 'profile', 'account', 'create-account'],
+                'only' => ['logout', 'profile', 'account', 'create-account', 'move-char'],
                 'rules' => [
                     [
-                        'actions' => ['logout', 'profile', 'account', 'create-account'],
+                        'actions' => ['logout', 'profile', 'account', 'create-account', 'move-char'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -31,6 +34,7 @@ class SiteController extends Controller
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'logout' => ['post'],
+                    'move-char' => ['post'],
                 ],
             ],
         ];
@@ -133,6 +137,32 @@ class SiteController extends Controller
             'model' => $model,
             'user' => $user,
         ]);
+    }
+
+    public function actionMoveChar($id)
+    {
+        $char = Char::findOne((int)$id);
+        if (!$char) {
+            throw new NotFoundHttpException('Персонаж не найден.');
+        }
+
+        $user = Yii::$app->user->identity;
+        if (!$user->getGameAccount($char->account_id)) {
+            throw new ForbiddenHttpException('Нет доступа к этому персонажу.');
+        }
+
+        if ($char->online) {
+            Yii::$app->session->setFlash('danger', 'Персонаж сейчас в игре. Выйдите, чтобы перенести его на точку сохранения.');
+            return $this->redirect(['account', 'id' => $char->account_id]);
+        }
+
+        $char->last_map = $char->save_map;
+        $char->last_x = $char->save_x;
+        $char->last_y = $char->save_y;
+        $char->save(false, ['last_map', 'last_x', 'last_y']);
+
+        Yii::$app->session->setFlash('success', 'Персонаж перенесен на точку сохранения.');
+        return $this->redirect(['account', 'id' => $char->account_id]);
     }
 
     /**
