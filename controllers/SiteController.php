@@ -35,6 +35,7 @@ class SiteController extends Controller
                 'actions' => [
                     'logout' => ['post'],
                     'move-char' => ['post'],
+                    'logout-finalize' => ['get'],
                 ],
             ],
         ];
@@ -84,7 +85,29 @@ class SiteController extends Controller
     
     public function actionLogout()
     {
+        $request = Yii::$app->request;
+        $logoutRpgid = (string) $request->post('logout_rpgid', '0') === '1';
+        if ($logoutRpgid) {
+            $authDomain = Yii::$app->params['authDomain'] ?? Yii::$app->params['authLocal'] ?? '';
+            if (!empty($authDomain)) {
+                $returnUrl = \yii\helpers\Url::to(['/site/logout-finalize'], true);
+                $logoutUrl = rtrim((string) $authDomain, '/') . '/user/logout?' . http_build_query([
+                    'return_url' => $returnUrl,
+                ]);
+                return $this->redirect($logoutUrl);
+            }
+        }
+
         Yii::$app->user->logout();
+
+        return $this->goHome();
+    }
+
+    public function actionLogoutFinalize()
+    {
+        if (!Yii::$app->user->isGuest) {
+            Yii::$app->user->logout();
+        }
 
         return $this->goHome();
     }
