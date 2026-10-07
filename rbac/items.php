@@ -1,16 +1,11 @@
 <?php
 $items = [
-    'moderator' => [
-        'type' => 1,
-        'description' => 'Модератор',
-        'ruleName' => 'userRpgidGroup',
-    ],
     'admin' => [
         'type' => 1,
         'description' => 'Администратор',
         'ruleName' => 'userRpgidGroup',
         'children' => [
-            'moderator',
+            'user',
         ],
     ],
     'user' => [

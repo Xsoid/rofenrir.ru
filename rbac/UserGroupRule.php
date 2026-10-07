@@ -18,8 +18,6 @@ class UserGroupRule extends Rule
             $group = Yii::$app->user->identity->group;
             if ($item->name === 'admin') {
                 return $group == 1;
-            } elseif ($item->name === 'moderator') {
-                return $group == 1 || $group == 2;
             }
         }
         return false;

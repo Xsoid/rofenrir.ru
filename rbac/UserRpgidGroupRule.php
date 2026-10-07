@@ -22,9 +22,6 @@ class UserRpgidGroupRule extends Rule
             $extRole = $this->getExtRole($item->description);
             $extUserRoles = $this->getExtUserRoles($user);
             
-            if ($item->name === 'moderator') {
-                return isset($extUserRoles[$extRole]);
-            }
             if ($item->name === 'admin') {
                 return $this->isExtAdmin($extUserRoles);
             }
